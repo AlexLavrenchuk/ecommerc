@@ -1,4 +1,162 @@
-footer {
-	padding: 100px;
-	background-color: blue;
-}
+ * {
+ 	box-sizing: border-box;
+ }
+
+ .footer {
+ 	background: #263238;
+ }
+
+ .footer-hero {
+ 	padding: 115px 0 100px 0;
+ }
+
+ .title {
+ 	display: block;
+ 	margin: 0 0 34px 0;
+ 	color: #ffffff;
+ 	font-size: 22px;
+ }
+
+ .title:after {
+ 	content: '';
+ 	display: block;
+ 	width: 51px;
+ 	height: 3px;
+ 	background: #8bc34a;
+ 	margin: 20px 0 0 0;
+ }
+
+ .footer-hero .about-company p {
+ 	color: #b7c3c8;
+ 	margin: 0 0 35px 0;
+ 	font-size: 15px;
+ }
+
+ .footer-hero ul {
+ 	padding: 0;
+ }
+
+ .footer-hero li {
+ 	list-style-type: none; 
+ 	padding: 0 0 22px 20px;
+ 	position: relative;
+ }
+
+ .about-company li {
+ 	padding: 0 0 22px 30px;
+ 	color: white;
+ 	font-size: 15px;
+ }
+
+ .footer-hero a {
+ 	color: #b9c1c5;
+ }
+
+ .footer-hero a:hover {
+ 	color: #8bc34a;
+ 	text-decoration: none;
+ 	cursor: pointer;
+
+ }
+
+ .fas {
+ 	position: absolute;
+ 	top: 5px;
+ 	left: 0;
+ 	color: #8bc34a;
+ }
+
+ .fab {
+ 	font-size: 30px;
+ }
+
+ .fab:hover {
+ 	color: #8bc34a;
+ }
+
+ .fa-facebook-square {
+ 	color: #3b5998;
+ }
+
+ .fa-twitter-square {
+ 	color: #55acee;
+ }
+
+ .fa-youtube-square {
+ 	color: #e52d27;
+ }
+
+ .fa-pinterest {
+ 	color: #bd081c
+ }
+
+ .fa-linkedin {
+ 	color: #1565c0;
+ }
+
+ .follow li {
+ 	padding: 0 5px 0 0;
+ }
+
+ .footer-hero ul {
+ 	margin: 0 0 40px 0;
+ }
+
+ .input-line {
+ 	position: relative; 
+ }
+
+ #e-mail {
+ 	padding: 11px 45px 11px 15px;
+ 	background: #2f3c43;
+ 	border: none;
+ 	color: white;
+ 	width: 100%;
+ }
+
+ input::-webkit-input-placeholder {
+ 	font-size: 14px;
+ 	color: #8e8e8e;
+ }
+
+ .btn {
+ 	position: absolute;
+ 	bottom: 0;
+ 	right: 0;
+ 	top: 0;
+ 	min-width: 43px;
+ 	background: #8bc34a;
+ }
+
+ .btn:hover {
+ 	background: yellow;
+ }
+
+ .follow p {
+ 	color: white;
+ 	font-size: 20px;
+ }
+
+ .fa-location-arrow {
+ 	color: white;
+ 	transform: translate(-50%,-50%);
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ }
+
+ .copy {
+ 	text-align: center;
+ 	border-top: 1px solid black;
+ 	margin: 0;
+ 	padding: 28px 0 35px 0;
+ 	color: #909497;
+ }
+
+ .test {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	opacity: 0;
+ 	visibility: hidden;
+ }
