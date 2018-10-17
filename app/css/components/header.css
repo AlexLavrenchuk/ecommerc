@@ -1,12 +1,38 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../../fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 ul,
 li {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 }
-.header-top {
-	border-bottom: 1px solid #000;/* для наглядности*/
+html,
+body {
+	font-family: 'Roboto';
 }
+
+
 .logo {
 	padding: 25px;
 }
@@ -50,15 +76,14 @@ li {
 	line-height: 36px;
  }
 .name {
+	font-weight: 500;
 	font-size: 14px;
 	color: #222;
 }
 .total-cash {
+	font-weight: bold;
 	font-size: 14px;
 	color: #8bc34a;
-}
-.navbar-light.navbar-nav.nav-link span {
-	background: red;
 }
 .smoll-circle {
 	width: 18px;
@@ -84,12 +109,12 @@ li {
 .navbar-nav li {
 	padding: 10px;
 }
-.my-menu {
+/*.my-menu {
 	border-top: 1px solid rgba(0,0,0,.15);
-}
-.my-menu:first-child {
+}*/
+/*.my-menu:first-child {
 	border-top: none;
-}
+}*/
 .active-menu:hover {
 	color: orange;
 }
@@ -114,6 +139,7 @@ li {
 	padding: 0 20px 0 0;
 }
 .name-menu {
+	font-weight: 500;
 	font-size: 12px;
 	color: #263238;
 }
@@ -122,6 +148,7 @@ li {
 	color: #84b743;
 }
 .data-menu {
+	font-weight: 500;
 	font-size: 10px;
 	color: #707070;
 }
@@ -133,6 +160,7 @@ li {
 .border-radius-none {
 	border-radius: 0;
 	font-size: 14px;
+	font-weight: bold;
 }
 .WordPress {
 	font-size: 12px;
@@ -143,6 +171,9 @@ li {
 	padding: 10px;
 	font-size: 16px;
 	color: #263238;
+}
+.br-top {
+	border-top: 1px solid rgba(0,0,0,.15);
 }
 @media (max-width: 1200px) {
 	p {
