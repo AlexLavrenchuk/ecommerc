@@ -30,6 +30,7 @@ gulp.task('scripts', function() {
 gulp.task('concat-css', function () {
   return gulp.src([
         'app/css/reset.css',
+        'app/css/libs/*.css',
         'app/css/components/*.css',
         'app/css/assets/*.css'
     ])
