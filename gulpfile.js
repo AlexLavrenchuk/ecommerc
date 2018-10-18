@@ -28,7 +28,8 @@ gulp.task('scripts', function() {
 // concat css
 
 gulp.task('concat-css', function () {
-  return gulp.src([        
+
+  return gulp.src([
         'app/css/libs/*.css',
         'app/css/reset.css',
         'app/css/main.css',
