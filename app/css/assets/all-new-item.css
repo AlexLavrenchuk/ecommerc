@@ -1,0 +1,195 @@
+* {
+	box-sizing: border-box;
+}
+
+.all-new-item span {
+	display: block;
+}
+
+.all-new-item {
+	background: #f4f6f5;
+}
+
+.all-new-item-center {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 15px 110px 15px;
+}
+
+
+
+ul,
+ol,
+li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.margin-card-deck {
+	margin-bottom: 30px;
+}
+
+.card-footer,
+.card-body{
+	justify-content: space-between;
+}
+
+.all-new-item .card-footer {
+	background: white;
+}
+
+.active-card:hover {
+box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
+}
+
+.author-img {
+	border-radius: 50px;
+	background: grey;
+	height: 30px;
+	width: 30px;
+	margin: 0 15px 0 0;
+}
+
+.rank,
+.author-holder {
+	align-items: center;
+}
+
+.rank ul {
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+}
+
+.rank-stars li {
+	padding: 0;
+	margin: 0 -1.5px;
+}
+
+.rank-stars .fa-star {
+	font-size: 10px;
+	color: gold;
+} 
+
+.average {
+	font-weight: normal;
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+.new-card-title {
+	font-weight: 500;
+	font-size: 16px;
+	padding: 0 0 15px 0;
+}
+
+.card-subtitle {
+	font-weight: 500;
+	font-size: 14px;
+	color: #8bc34a;
+}
+
+.price {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.author-name {
+	font-weight: 500;
+	font-size: 14px;
+	color: #8d9ea6;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.card-footer {
+		flex-direction: column;
+	}
+
+	.rank,
+	.author-holder {
+		justify-content: center;
+
+	}
+
+	.price {
+	padding-left: 10px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.card-footer,
+	.card-body {
+		flex-direction: column;
+	}
+
+	.new-card-title {
+		padding: 0 0 10px 0;
+		line-height: 1;
+	}
+
+	.rank,
+	.author-holder {
+		justify-content: center;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.card-footer,
+	.card-body,
+	.author-holder,
+	.rank {
+		flex-direction: column;
+	}
+
+	.new-card-title {
+		padding: 0 0 10px 0;
+		line-height: 1;
+	}
+
+	.rank,
+	.author-holder {
+		justify-content: center;
+	}
+
+	.card-footer,
+	.card-body {
+		padding: 5px!important;
+	}
+
+	.new-card-title {
+		font-size: 12px;
+	}
+
+	.card-subtitle {
+		font-size: 10px;
+		color: #8bc34a;
+	}
+
+	.price {
+		font-size: 15px;
+	}
+
+	.author-name {
+		font-size: 11px;
+	}
+
+	.author-img,
+	.average {
+		margin: 0;
+	}
+
+}
+
+@media (max-width: 479px) {
+	.card-footer {
+		flex-direction: column;
+	}
+
+	.rank,
+	.author-holder {
+		justify-content: center;
+
+	}
+}
