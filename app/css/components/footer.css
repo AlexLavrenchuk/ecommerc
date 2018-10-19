@@ -1,3 +1,4 @@
+ /*footer*/
  * {
  	box-sizing: border-box;
  }
@@ -66,7 +67,7 @@
  	color: #8bc34a;
  }
 
- .fab {
+ .footer-hero .fab {
  	font-size: 30px;
  }
 
@@ -95,7 +96,10 @@
  }
 
  .follow li {
+<<<<<<< HEAD
  	padding: 0 5px 0 0;
+=======
+>>>>>>> master
  	margin: 0 5px 0 0;
  	display: inline-block;
  	padding: 0;
@@ -136,7 +140,11 @@
  	background: yellow;
  }
 
+<<<<<<< HEAD
 .ps-top-to-bottom {
+=======
+ .ps-top-to-bottom {
+>>>>>>> master
  	position: relative;
  	border-top: 2px solid black;
  }
@@ -187,3 +195,4 @@
  	opacity: 0;
  	visibility: hidden;
  }
+ /*footer end*/
