@@ -1,0 +1,7 @@
+.follow a {
+	display: block;
+}
+
+.follow a:hover {
+	opacity: .7;
+}
