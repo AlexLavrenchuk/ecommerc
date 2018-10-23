@@ -337,3 +337,29 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 	}
 
 }
+
+
+/*////////////////////comment to hide////////////////////////////*/
+
+
+/*.y {
+	display: none;
+}
+.n {
+	display: block;
+}
+.shopping-cart-notification {
+	background: #e74c3c;
+}*/
+
+
+
+/*////////////////////comment to show////////////////////////////*/
+
+
+.y {
+	display: block;
+}
+.n {
+	display: none;
+}
