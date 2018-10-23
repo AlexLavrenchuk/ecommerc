@@ -21,7 +21,8 @@ gulp.task('browser-sync', function() {
 gulp.task('scripts', function() {
   return gulp.src([
         'app/js/libs/jquery-3.3.1.min.js',
-        'app/js/libs/bootstrap.min.js'
+        'app/js/libs/bootstrap.min.js',
+        'app/js/libs/slick.min.js'
     ])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('app/js/'));
