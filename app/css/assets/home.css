@@ -12,9 +12,6 @@
 	color: #263238;
 	margin-bottom: 50px;
 }
-.button-main {
-
-}
 .my-button-main {
 	border-radius: 0;
 	border: none;
@@ -38,9 +35,6 @@
 	background: #e74c3c;
 	color: #fff;
 	outline: none;
-}
-.button-sorting {
-
 }
 .my-button-sorting {
 	border-radius: 0;
@@ -79,18 +73,21 @@
 	flex-wrap: nowrap;
 	text-align: center;
 }
+.choice-item {
+	margin: 0 30px;
+}
 .img-choice {
 	width: 113px;
 	height: 113px;
 	border-radius: 50%;
 	background: #eee; /*choice img*/
-	margin: auto;
+	margin: 0 auto 30px auto;
 }
 .titel-choice {
 	font-size: 24px;
 	font-weight: 500;
 	color: #fff;
-	line-height: 60px;
+	margin-bottom: 25px;
 }
 .titel-choice:hover {
 	color: #8bc34a;
@@ -100,6 +97,7 @@
 	font-size: 15px;
 	font-weight: 500;
 	color: #b0bec5;
+	margin-top: 25px;
 }
 /*.......................third-block........................*/
 .main-home-fourth-block {
@@ -121,7 +119,7 @@
 	font-weight: bold;
 	font-size: 30px;
 	color: #fff;
-	max-width: 270px
+	max-width: 270px;
 }
 .become-link {
 	font-size: 18px;
@@ -141,8 +139,28 @@
 .become-link:active {
 	box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.5);
 }
-
-
+/*.......................fifth-block........................*/
+.main-home-fifth-block {
+	padding: 120px 20px;
+	background: #fff;
+}
+.item-tutorials {
+	width: 33%;
+	padding: 0 15px;
+}
+.img-tutorials {
+	width: 100%;
+}
+.text-tutorials {
+	text-align: center;
+	display: block;
+	width: 100%;
+	padding: 40px 0;
+	background: #f8f8f8;
+	color: #263238;
+	font-size: 24px;
+	font-weight: bold;
+}
 /*.................label-lightning..................*/
 .label {
 	position: absolute;
@@ -156,13 +174,6 @@
 	top: 11px;
 	left: 12px;
 }
-
-/*@media..................*/
-/*@media (max-width: 1200px){
-	.card-deck .card {
-		flex: 1 0 47%;
-	}
-}*/
 /*................my-dots........................*/
 .my-dots {
 	display: flex;
@@ -190,7 +201,90 @@
 }
 .my-dots button:hover {
 	opacity: 0.75;
+	background: #8bc34a;
+	border: 0;
 }
 .my-dots button:active {
 	opacity: 1;
+}
+/*@media..................*/
+@media (max-width: 992px){
+	.main-home-first-block,
+	.main-home-second-block,
+	.main-home-third-block,
+	.main-home-fourth-block,
+	.main-home-fifth-block {
+		padding: 50px 20px;
+	}
+	.subtitel-main {
+		font-size: 28px
+	}
+	.text-tutorials,
+	.titel-choice {
+		font-size: 18px;
+	}
+}
+@media (max-width: 768px){
+	.choice-row {
+		flex-wrap: wrap;
+	}
+	.text-choice {
+		margin-bottom: 25px;
+	}
+	.tutorials {
+		flex-wrap: wrap;
+	}
+	.item-tutorials {
+	    width: 50%;
+	    margin: auto;
+	    margin-top: 25px;
+	}
+	.subtitel-main {
+		margin-bottom: 25px;
+	}
+	.f-wrap {
+		flex-wrap: wrap;
+		margin-bottom: 0;
+	}
+	.home-adaptability {
+		flex: 1 0 40% !important;
+		margin-bottom: 25px !important;
+	}
+	.become-text {
+		font-size: 25px
+	}
+}
+@media (max-width: 576px){
+	.item-tutorials {
+	    width: 100%;
+	}
+	.button-main {
+		flex-wrap: wrap;
+	}
+	.my-button-main {
+		margin-bottom: 10px;
+	}
+
+	.grey {
+	 	width: 100%;
+	 	height: 100%;
+	 	padding: 20px;
+	}
+	.green {
+		width: 100%;
+		height: 80%;
+		padding: 20px;
+		display: flex;
+		flex: flex-column;
+		flex-wrap: wrap;
+	}
+	.become-text {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.become-link {
+		width: 90%;
+		margin: 0 auto 20px auto;
+		padding: 25px 10px;
+	}
 }
