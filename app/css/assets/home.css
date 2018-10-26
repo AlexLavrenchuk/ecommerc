@@ -70,11 +70,7 @@
 	margin-bottom: 80px;
 }
 .choice-row {
-	flex-wrap: nowrap;
 	text-align: center;
-}
-.choice-item {
-	margin: 0 30px;
 }
 .img-choice {
 	width: 113px;
@@ -111,15 +107,15 @@
 }
 .green {
 	max-width: 654px;
-	height: 216px;
 	background: #8bc34a;
-	padding: 0 60px;
+	padding: 63px 60px;
 }
 .become-text {
 	font-weight: bold;
 	font-size: 30px;
 	color: #fff;
 	max-width: 270px;
+	margin-bottom: 0;
 }
 .become-link {
 	font-size: 18px;
@@ -225,9 +221,6 @@
 	}
 }
 @media (max-width: 768px){
-	.choice-row {
-		flex-wrap: wrap;
-	}
 	.text-choice {
 		margin-bottom: 25px;
 	}
@@ -264,7 +257,6 @@
 	.my-button-main {
 		margin-bottom: 10px;
 	}
-
 	.grey {
 	 	width: 100%;
 	 	height: 100%;
@@ -272,7 +264,6 @@
 	}
 	.green {
 		width: 100%;
-		height: 80%;
 		padding: 20px;
 		display: flex;
 		flex: flex-column;
