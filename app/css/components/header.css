@@ -242,10 +242,6 @@
 }
 .modal-my-style-header {
 	border-bottom: 0;
-	/*justify-content: center;*/
-}
-.modal-body-my {
-
 }
 .modal-login {
 	font-weight: bold;
@@ -273,7 +269,19 @@
 	font-size: 14px;
 	padding-left: 50px;
 	border: 0;
-/*	outline: none;*/
+	box-shadow: none;
+}
+.input-my[type="name"]::-webkit-input-placeholder {
+    color: #fff;
+} 
+.input-my[type="name"]::-moz-placeholder {
+    color: #fff;
+}
+.input-my[type="password"]::-webkit-input-placeholder {
+    color: #fff;
+} 
+.input-my[type="password"]::-moz-placeholder {
+    color: #fff;
 }
 .submit-button {
 	background: #fff;
@@ -281,37 +289,40 @@
 	font-size: 14px;
 	font-weight: bold;
 	box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
-	padding: 18px 35px;
+	padding: 14px 35px;
 	border: 0;
 	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
 }
 .submit-button:hover {
-	transform: button 5px;
-	transition: 5s;
+	background: #eee;
 }
-.check-my-link {
-	margin-top: 8px;
-	margin-right: 20px;
+.submit-button:focus {
+	transform: translateY(5px);
+	outline: none;
+	transition: .2s;
 }
-.check-my {
+.register-link {
 	color: #fff;
 	font-size: 18px;
 	background: rgba(0, 0, 0, .1);
-	padding: 16px 35px 16px 80px;
+	padding: 12px 38px;
+    margin-left: 10px;
 }
-.loct-password {
+.register-link:hover,
+.lost-password:hover {
+	text-decoration: none;
+	color: #eee;
+}
+.register-link i {
+	margin-right: 10px;
+	font-size: 14px;
+}
+.lost-password {
 	color: #fff;
 	font-size: 18px;
 }
-
-
-
-
-
-
-
-
-
 
 /*media......................................................*/
 @media (max-width: 991px){
@@ -403,13 +414,33 @@
 		.button-login-green {
 		margin-right: 0px;
 	}
+	/*.......modal......*/
+	.form-style-my {
+		width: 80%;
+	}
+	.but-sub {
+		flex: none;
+		flex-wrap: wrap;
+	}
+	.but-sub-width {
+		width: 100%;
+	}
+	.submit-button {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.register-link {
+		width: 100%;
+		margin-left: 0;
+		padding: 12px;
+	}
 }
 
 
 /*////////////////////comment to hide////////////////////////////*/
 
 
-.y {
+/*.y {
 	display: none;
 }
 .n {
@@ -417,16 +448,16 @@
 }
 .shopping-cart-notification {
 	background: #e74c3c;
-}
+}*/
 
 
 
 /*////////////////////comment to show////////////////////////////*/
 
 
-/*.y {
+.y {
 	display: block;
 }
 .n {
 	display: none;
-}*/
+}
