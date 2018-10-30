@@ -1,3 +1,6 @@
+* {
+	outline: none;
+}
 /*........................start............................*/
 .header-top {
 	padding: 20px;	
@@ -216,6 +219,100 @@
 	margin-left: 29px;
 }
 
+/*...................................modal..............................................*/
+.my-width {
+	max-width: 730px;
+}
+.modal-my-style {
+	background: #8bc34a;
+	border: 0;
+	border-radius: 0;
+	box-shadow:  0px 0px 75px 30px rgba(0, 0, 0, .5);
+	padding-bottom: 100px;
+}
+.close-color {
+	color: #fff;
+	font-size: 18px;
+}
+.close-color:not(:disabled):not(.disabled):hover,
+.close-color:not(:disabled):not(.disabled):focus{
+	color: #fff;
+	opacity: 1;
+	outline: none;
+}
+.modal-my-style-header {
+	border-bottom: 0;
+	/*justify-content: center;*/
+}
+.modal-body-my {
+
+}
+.modal-login {
+	font-weight: bold;
+	font-size: 48px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+.form-style-my {
+	width: 400px;
+	margin: 0 auto;
+}
+.modal-label {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: #fff;
+	font-size: 14px;
+}
+.input-my,
+.input-my:focus {
+	background: rgba(0, 0, 0, .1);
+	border-radius: 0;
+	color: #fff;
+	font-size: 14px;
+	padding-left: 50px;
+	border: 0;
+/*	outline: none;*/
+}
+.submit-button {
+	background: #fff;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+	padding: 18px 35px;
+	border: 0;
+	text-transform: uppercase;
+}
+.submit-button:hover {
+	transform: button 5px;
+	transition: 5s;
+}
+.check-my-link {
+	margin-top: 8px;
+	margin-right: 20px;
+}
+.check-my {
+	color: #fff;
+	font-size: 18px;
+	background: rgba(0, 0, 0, .1);
+	padding: 16px 35px 16px 80px;
+}
+.loct-password {
+	color: #fff;
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
 /*media......................................................*/
 @media (max-width: 991px){
 	.help-tel {
@@ -312,7 +409,7 @@
 /*////////////////////comment to hide////////////////////////////*/
 
 
-/*.y {
+.y {
 	display: none;
 }
 .n {
@@ -320,16 +417,16 @@
 }
 .shopping-cart-notification {
 	background: #e74c3c;
-}*/
+}
 
 
 
 /*////////////////////comment to show////////////////////////////*/
 
 
-.y {
+/*.y {
 	display: block;
 }
 .n {
 	display: none;
-}
+}*/
