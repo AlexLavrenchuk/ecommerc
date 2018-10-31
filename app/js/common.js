@@ -38,3 +38,37 @@ $(document).ready(function(){
   ]
 	});
 });
+
+/////////////////// 
+$('.view-selection .fa-th-list').click(function(){
+  $('.card-deck').addClass('card-deck-list');
+  $('.fa-th-list').addClass('active-switcher');
+  $('.fa-th-large').removeClass('active-switcher');
+});
+
+$('.view-selection .fa-th-large').click(function(){
+  $('.card-deck').removeClass('card-deck-list');
+  $('.fa-th-list').removeClass('active-switcher');
+  $('.fa-th-large').addClass('active-switcher');
+});
+
+$('.top-10 .btn-search-green').click(function(){
+  $('.top-10 .card').addClass('visible-tablet');
+});
+
+////////range////////// 
+var softSlider = document.getElementById('soft');
+
+noUiSlider.create(softSlider, {
+    start: 50,
+    range: {
+        min: 0,
+        max: 100
+    },
+    pips: {
+        mode: 'values',
+        values: [20, 80],
+        density: 4
+    }
+});
+

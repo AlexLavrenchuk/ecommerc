@@ -1,3 +1,6 @@
+* {
+	outline: none;
+}
 /*........................start............................*/
 .header-top {
 	padding: 20px;	
@@ -216,6 +219,111 @@
 	margin-left: 29px;
 }
 
+/*...................................modal..............................................*/
+.my-width {
+	max-width: 730px;
+}
+.modal-my-style {
+	background: #8bc34a;
+	border: 0;
+	border-radius: 0;
+	box-shadow:  0px 0px 75px 30px rgba(0, 0, 0, .5);
+	padding-bottom: 100px;
+}
+.close-color {
+	color: #fff;
+	font-size: 18px;
+}
+.close-color:not(:disabled):not(.disabled):hover,
+.close-color:not(:disabled):not(.disabled):focus{
+	color: #fff;
+	opacity: 1;
+	outline: none;
+}
+.modal-my-style-header {
+	border-bottom: 0;
+}
+.modal-login {
+	font-weight: bold;
+	font-size: 48px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+.form-style-my {
+	width: 400px;
+	margin: 0 auto;
+}
+.modal-label {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: #fff;
+	font-size: 14px;
+}
+.input-my,
+.input-my:focus {
+	background: rgba(0, 0, 0, .1);
+	border-radius: 0;
+	color: #fff;
+	font-size: 14px;
+	padding-left: 50px;
+	border: 0;
+	box-shadow: none;
+}
+.input-my[type="name"]::-webkit-input-placeholder {
+    color: #fff;
+} 
+.input-my[type="name"]::-moz-placeholder {
+    color: #fff;
+}
+.input-my[type="password"]::-webkit-input-placeholder {
+    color: #fff;
+} 
+.input-my[type="password"]::-moz-placeholder {
+    color: #fff;
+}
+.submit-button {
+	background: #fff;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+	padding: 14px 35px;
+	border: 0;
+	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
+}
+.submit-button:hover {
+	background: #eee;
+}
+.submit-button:focus {
+	transform: translateY(5px);
+	outline: none;
+	transition: .2s;
+}
+.register-link {
+	color: #fff;
+	font-size: 18px;
+	background: rgba(0, 0, 0, .1);
+	padding: 12px 38px;
+    margin-left: 10px;
+}
+.register-link:hover,
+.lost-password:hover {
+	text-decoration: none;
+	color: #eee;
+}
+.register-link i {
+	margin-right: 10px;
+	font-size: 14px;
+}
+.lost-password {
+	color: #fff;
+	font-size: 18px;
+}
+
 /*media......................................................*/
 @media (max-width: 991px){
 	.help-tel {
@@ -305,6 +413,26 @@
 	}
 		.button-login-green {
 		margin-right: 0px;
+	}
+	/*.......modal......*/
+	.form-style-my {
+		width: 80%;
+	}
+	.but-sub {
+		flex: none;
+		flex-wrap: wrap;
+	}
+	.but-sub-width {
+		width: 100%;
+	}
+	.submit-button {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.register-link {
+		width: 100%;
+		margin-left: 0;
+		padding: 12px;
 	}
 }
 

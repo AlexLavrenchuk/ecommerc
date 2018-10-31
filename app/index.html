@@ -202,7 +202,7 @@
 							        <a class="dropdown-item dropdown-text" href="#"><i class="fas fa-angle-right dropdown-arrow-right"></i>Withdraws</a>
 										</div>
 									</div>
-									<button type="button" class="btn btn-success n button-login-green">Login</button>
+									<button type="button" class="btn btn-success n button-login-green" data-toggle="modal" data-target="#exampleModalCenter">Login</button>
 								</div>							
 								<div class="register">
 									<button type="button" class="btn btn-danger button-margin-register n">Register</button>
@@ -210,6 +210,41 @@
 								</div>
 							</div>
 						</div>
+					</div>
+					<!-- .............................Modal................................. -->
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered my-width" role="document">
+					    <div class="modal-content modal-my-style">
+					      <div class="modal-header modal-my-style-header">					        
+					        <button type="button" class="close close-color" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body modal-body-my">
+					      	<h2 class="modal-title modal-login mb-3" id="exampleModalLongTitle">login</h2>					      
+					      	<form class="form-style-my">
+							  		<div class="mb-2 position-relative">
+							    		<i class="fas fa-user modal-label"></i>
+							    		<input type="name" class="form-control input-my" placeholder="Name">							   
+							 			</div>
+							 			<div class="mb-3 position-relative">
+							    		<i class="fas fa-unlock modal-label"></i>
+							    		<input type="password" class="form-control input-my" placeholder="Password">
+							  		</div>
+							  		<div class="but-sub d-flex justify-content-between mb-3">
+							  			<div class="but-sub-width">
+							  				<button type="submit" class="submit-button">Submit</button>
+							  			</div>
+								  		<a href="#" class="register-link">
+								    		<i class="far fa-edit"></i>
+								    		<span>Create An Account?</span>
+								  		</a>								  		
+							  		</div>
+							  		<a class="lost-password" href="#">Lost Password?</a>							  		
+									</form>									
+								</div>					     
+					    </div>
+					  </div>
 					</div>
 					<!-- ............................nav...................................-->		
 					<div class="header-bottom">
