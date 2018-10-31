@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/libs/nouislider.min.css">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/assets/all-new-item.css">
 </head>
@@ -210,7 +211,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="header-bottom">
+		<div class="header-boыуфксрttom">
 			<div class="header-bottom-center">
 				<div class="container">
 					<nav class="navbar navbar-expand-lg navbar-bottom navbar-light">
@@ -266,7 +267,7 @@
 			</div>
 		</form>
 	</div>
-	<div class="all-new-item">
+	<div class="all-new-item"> <!------------------- ITEM --------------------------------->
 		<div class="all-new-item-center">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
@@ -276,7 +277,7 @@
 			</nav>
 			<div class="container">
 				<div class="row">
-					<div class="col-3">
+					<div class="col-12 col-lg-3">
 						<div class="aside">
 							<div class="categories aside-custom">
 								<span class="aside-title">Categories
@@ -306,442 +307,673 @@
 							</div>
 							<div class="price-range aside-custom">
 								<span class="aside-title">Price Range</span>
-								<form>
-									<div class="form-group">
-										<label for="formControlRange"></label>
-										<input type="range" class="form-control-range" id="formControlRange">
-									</div>
-								</form>
+								<div id="soft">
+									
+								</div>
 								<button type="button" aria-pressed="falce" class="btn btn-success btn-search-green"><i class="fas fa-search"></i>Search</button>
 							</div>
 							<div class="top-10 aside-custom"  >
-								<span class="aside-title">Top 10 Sellers</span>
-								<div class="card">												
-									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">														<div class="card-body d-flex">
-										<div class="card-title-holder">
-											<span class="new-card-title">WISTIA Corporate</span>
-											<span class="card-subtitle">WordPress</span>
+								<span class="d-block aside-title">Top 10 Sellers </span>
+								<div class="row-for-tablet">
+									<div class="card">												
+										<div class="card-img-wrapp">
+											<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
+										</div>										
+										<div class="card-body d-flex">
+											<div class="card-title-holder">
+												<span class="d-block new-card-title">WISTIA Corporate</span>
+												<span class="d-block card-subtitle">WordPress</span>
+											</div>
+											<div class="price">
+												<span class="d-block card-price">$59</span>
+											</div>
 										</div>
-										<div class="price">
-											$59
+										<div class="card-footer d-flex border-bottom">
+											<div class="author-holder d-flex">	
+												<div class="author-img">	</div>
+												<div class="author-name">PsdBosS</div>
+											</div>
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+											</div>
 										</div>
 									</div>
-									<div class="card-footer d-flex border-bottom">
-										<div class="author-holder d-flex">	
-											<div class="author-img">	</div>
-											<div class="author-name">PsdBosS</div>
+									<div class="card">												
+										<div class="card-img-wrapp">
+											<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
+										</div>										
+										<div class="card-body d-flex">
+											<div class="card-title-holder">
+												<span class="d-block new-card-title">WISTIA Corporate</span>
+												<span class="d-block card-subtitle">WordPress</span>
+											</div>
+											<div class="price">
+												<span class="d-block card-price">$59</span>
+											</div>
 										</div>
-										<div class="rank d-flex">	
-											<ul class="rank-stars">
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-											</ul>
+										<div class="card-footer d-flex border-bottom">
+											<div class="author-holder d-flex">	
+												<div class="author-img">	</div>
+												<div class="author-name">PsdBosS</div>
+											</div>
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="card">												
+										<div class="card-img-wrapp">
+											<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
+										</div>											<div class="card-body d-flex">
+											<div class="card-title-holder">
+												<span class="d-block new-card-title">WISTIA Corporate</span>
+												<span class="d-block card-subtitle">WordPress</span>
+											</div>
+											<div class="price">
+												<span class="d-block card-price">$59</span>
+											</div>
+										</div>
+										<div class="card-footer d-flex ">
+											<div class="author-holder d-flex">	
+												<div class="author-img">	</div>
+												<div class="author-name">PsdBosS</div>
+											</div>
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card">												
-									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">														<div class="card-body d-flex">
-										<div class="card-title-holder">
-											<span class="new-card-title">WISTIA Corporate</span>
-											<span class="card-subtitle">WordPress</span>
-										</div>
-										<div class="price">
-											$59
-										</div>
-									</div>
-									<div class="card-footer d-flex border-bottom">
-										<div class="author-holder d-flex">	
-											<div class="author-img">	</div>
-											<div class="author-name">PsdBosS</div>
-										</div>
-										<div class="rank d-flex">	
-											<ul class="rank-stars">
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-											</ul>
-										</div>
-									</div>
+								<button type="button" aria-pressed="falce" class="btn btn-success btn-search-green">View All</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-9">
+						<div class="sort d-flex">
+							<div class="view-sort d-flex">
+								<span class="d-block fas fa-sort-amount-down"></span>
+								<span class="d-block sort-name">Sort by: New Items</span>
+								<span class="d-block fas fa-sort"></span>
+							</div>
+							<div class="view-selection d-flex">
+								<button class="fas fa-th-large active-switcher"></button>
+								<button class="fas fa-th-list"></button>
+							</div>
+						</div>
+						<div class="card-deck margin-card-deck">
+							<div class="card active-card">
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
 								</div>
-								<div class="card">												
-									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">														<div class="card-body d-flex">
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="new-card-title">WISTIA Corporate</span>
-											<span class="card-subtitle">WordPress</span>
+											<span class="d-block new-card-title">WISTIA Corporate</span>
+											<span class="d-block card-subtitle">WordPress</span>
 										</div>
 										<div class="price">
-											$59
+											<span class="d-block card-price">$59</span>
 										</div>
+									</div>
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
 									</div>
 									<div class="card-footer d-flex ">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
 											<div class="author-name">PsdBosS</div>
 										</div>
-										<div class="rank d-flex">	
-											<ul class="rank-stars">
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-												<li class="d-inline"><i class="star fas fa-star"></i></li>
-											</ul>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
 										</div>
 									</div>
 								</div>
-								<button type="button" aria-pressed="falce" class="btn btn-success btn-search-green">Viev All</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-9">
-						<div class="sort">
-
-						</div>
-						<div class="card-deck margin-card-deck">
-							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">WISTIA Corporate</span>
-										<span class="card-subtitle">WordPress</span>
-									</div>
-									<div class="price">
-										$59
-									</div>
-								</div>
-								<div class="card-footer d-flex ">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">PsdBosS</div>
-									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
-									</div>
-								</div>
 							</div>
 							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">Cartoon Face</span>
-										<span class="card-subtitle">Illsatration</span>
-									</div>
-									<div class="price">
-										$10
-									</div>
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
 								</div>
-								<div class="card-footer d-flex">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">Mikestro</div>
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
+										<div class="card-title-holder">
+											<span class="d-block new-card-title">Cartoon Face</span>
+											<span class="d-block card-subtitle">Illsatration</span>
+										</div>
+										<div class="price">
+											<span class="d-block card-price">$10</span>
+										</div>
 									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
+									</div>
+									<div class="card-footer d-flex">
+										<div class="author-holder d-flex">	
+											<div class="author-img">	</div>
+											<div class="author-name">Mikestro</div>
+										</div>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">Food Menu</span>
-										<span class="card-subtitle">Plugins</span>
-									</div>
-									<div class="price">
-										$15
-									</div>
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
 								</div>
-								<div class="card-footer d-flex">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">Gimsz</div>
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
+										<div class="card-title-holder">
+											<span class="d-block new-card-title">Food Menu</span>
+											<span class="d-block card-subtitle">Plugins</span>
+										</div>
+										<div class="price">
+											<span class="d-block card-price">$15</span>
+										</div>
 									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div class="card-deck margin-card-deck">
-							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">Grand Ballet - Dance</span>
-										<span class="card-subtitle">PSD Template</span>
-									</div>
-									<div class="price">
-										$12
-									</div>
-								</div>
-								<div class="card-footer d-flex">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">Greenta9</div>
-									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
-									</div>
-								</div>
-							</div>
-							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">Mockup Desing</span>
-										<span class="card-subtitle">PSD Template</span>
-									</div>
-									<div class="price">
-										$12
-									</div>
-								</div>
-								<div class="card-footer d-flex">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">D9ten</div>
-									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
-									</div>
-								</div>
-							</div>
-							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">Responsive APP</span>
-										<span class="card-subtitle">Site Template</span>
-									</div>
-									<div class="price">
-										$20
-									</div>
-								</div>
-								<div class="card-footer d-flex">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">PsdBosS</div>
-									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
+									<div class="card-footer d-flex">
+										<div class="author-holder d-flex">	
+											<div class="author-img">	</div>
+											<div class="author-name">Gimsz</div>
+										</div>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="card-deck margin-card-deck">
 							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">Business Template</span>
-										<span class="card-subtitle">Joomla</span>
-									</div>
-									<div class="price">
-										$48
-									</div>
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
 								</div>
-								<div class="card-footer d-flex">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">PsdBosS</div>
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
+										<div class="card-title-holder">
+											<span class="d-block new-card-title">Grand Ballet - Dance</span>
+											<span class="d-block card-subtitle">PSD Template</span>
+										</div>
+										<div class="price">
+											<span class="d-block card-price">$12</span>
+										</div>
 									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
 									</div>
-								</div>
-							</div>
-							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">Flat Design</span>
-										<span class="card-subtitle">PSD Template</span>
-									</div>
-									<div class="price">
-										$12
-									</div>
-								</div>
-								<div class="card-footer d-flex">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">PsdBosS</div>
-									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
+									<div class="card-footer d-flex">
+										<div class="author-holder d-flex">	
+											<div class="author-img">	</div>
+											<div class="author-name">Greenta9</div>
+										</div>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">Gymedge</span>
-										<span class="card-subtitle">WordPress</span>
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
+								</div>
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
+										<div class="card-title-holder">
+											<span class="d-block new-card-title">Mockup Desing</span>
+											<span class="d-block card-subtitle">PSD Template</span>
+										</div>
+										<div class="price">
+											<span class="d-block card-price">$12</span>
+										</div>
 									</div>
-									<div class="price">
-										$55
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
+									</div>
+									<div class="card-footer d-flex">
+										<div class="author-holder d-flex">	
+											<div class="author-img">	</div>
+											<div class="author-name">D9ten</div>
+										</div>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="card-footer d-flex">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">PsdBosS</div>
+							</div>
+							<div class="card active-card">
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
+								</div>
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
+										<div class="card-title-holder">
+											<span class="d-block new-card-title">Responsive APP</span>
+											<span class="d-block card-subtitle">Site Template</span>
+										</div>
+										<div class="price">
+											<span class="d-block card-price">$20</span>
+										</div>
 									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
+									</div>
+									<div class="card-footer d-flex">
+										<div class="author-holder d-flex">	
+											<div class="author-img">	</div>
+											<div class="author-name">PsdBosS</div>
+										</div>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="card-deck margin-card-deck">
 							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">Grand Ballet - Dance</span>
-										<span class="card-subtitle">PSD Template</span>
-									</div>
-									<div class="price">
-										$12
-									</div>
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
 								</div>
-								<div class="card-footer d-flex">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">PsdBosS</div>
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
+										<div class="card-title-holder">
+											<span class="d-block new-card-title">Business Template</span>
+											<span class="d-block card-subtitle">Joomla</span>
+										</div>
+										<div class="price">
+											<span class="d-block card-price">$48</span>
+										</div>
 									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
 									</div>
-								</div>
-							</div>
-							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">The Post Grid</span>
-										<span class="card-subtitle">Component</span>
-									</div>
-									<div class="price">
-										$18
-									</div>
-								</div>
-								<div class="card-footer d-flex">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">PsdBosS</div>
-									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
+									<div class="card-footer d-flex">
+										<div class="author-holder d-flex">	
+											<div class="author-img">	</div>
+											<div class="author-name">PsdBosS</div>
+										</div>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="card active-card">
-								<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
-								<div class="card-body d-flex">
-									<div class="card-title-holder">
-										<span class="new-card-title">Grand Ballet - Dance</span>
-										<span class="card-subtitle">PSD Template</span>
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
+								</div>
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
+										<div class="card-title-holder">
+											<span class="d-block new-card-title">Flat Design</span>
+											<span class="d-block card-subtitle">PSD Template</span>
+										</div>
+										<div class="price">
+											<span class="d-block card-price">$12</span>
+										</div>
 									</div>
-									<div class="price">
-										$18
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
+									</div>
+									<div class="card-footer d-flex">
+										<div class="author-holder d-flex">	
+											<div class="author-img">	</div>
+											<div class="author-name">PsdBosS</div>
+										</div>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="card-footer d-flex">
-									<div class="author-holder d-flex">	
-										<div class="author-img">	</div>
-										<div class="author-name">PsdBosS</div>
+							</div>
+							<div class="card active-card">
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
+								</div>
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
+										<div class="card-title-holder">
+											<span class="d-block new-card-title">Gymedge</span>
+											<span class="d-block card-subtitle">WordPress</span>
+										</div>
+										<div class="price">
+											<span class="d-block card-price">$55</span>
+										</div>
 									</div>
-									<div class="rank d-flex">	
-										<ul class="rank-stars">
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-											<li class="d-inline"><i class="star fas fa-star"></i></li>
-										</ul>
-										<div class="average">(05)</div>
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
+									</div>
+									<div class="card-footer d-flex">
+										<div class="author-holder d-flex">	
+											<div class="author-img">	</div>
+											<div class="author-name">PsdBosS</div>
+										</div>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-deck margin-card-deck">
+							<div class="card active-card">
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
+								</div>
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
+										<div class="card-title-holder">
+											<span class="d-block new-card-title">Grand Ballet - Dance</span>
+											<span class="d-block card-subtitle">PSD Template</span>
+										</div>
+										<div class="price">
+											<span class="d-block card-price">$12</span>
+										</div>
+									</div>
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
+									</div>
+									<div class="card-footer d-flex">
+										<div class="author-holder d-flex">	
+											<div class="author-img">	</div>
+											<div class="author-name">PsdBosS</div>
+										</div>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card active-card">
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
+								</div>
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
+										<div class="card-title-holder">
+											<span class="d-block new-card-title">The Post Grid</span>
+											<span class="d-block card-subtitle">Component</span>
+										</div>
+										<div class="price">
+											<span class="d-block card-price">$18</span>
+										</div>
+									</div>
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
+									</div>
+									<div class="card-footer d-flex">
+										<div class="author-holder d-flex">	
+											<div class="author-img">	</div>
+											<div class="author-name">PsdBosS</div>
+										</div>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card active-card">
+								<div class="card-img-wrapp">
+									<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
+								</div>
+								<div class="card-body-wrapp">
+									<div class="card-body d-flex">
+										<div class="card-title-holder">
+											<span class="d-block new-card-title">Grand Ballet - Dance</span>
+											<span class="d-block card-subtitle">PSD Template</span>
+										</div>
+										<div class="price">
+											<span class="d-block card-price">$18</span>
+										</div>
+									</div>
+									<div class="viwe-for-list">
+										<span class="d-block card-description">Pimply dummy text of the printing and typesetting industry.</span>
+										<span class="d-block sales">Sales (..)</span>
+									</div>
+									<div class="card-footer d-flex">
+										<div class="author-holder d-flex">	
+											<div class="author-img">	</div>
+											<div class="author-name">PsdBosS</div>
+										</div>
+										<div class="demand d-flex">
+											<div class="rank d-flex">	
+												<ul class="rank-stars">
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+													<li class="d-inline"><i class="star fas fa-star"></i></li>
+												</ul>
+												<span class="d-block average">(05)</span>
+											</div>
+											<div class="comment text-delimiter">
+												<span class="d-block far fa-comment"></span>
+												<span class="d-block total-comment">(...)</span>
+											</div>
+											<div class="like text-delimiter">
+												<span class="d-block far fa-heart"></span>
+												<span class="d-block total-like">(...)</span>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -751,7 +983,7 @@
 
 								<li class="page-item"><a class="page-link" href="#">1</a></li>
 								<li class="page-item active">
-									<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+									<a class="page-link" href="#">2 <span class="d-block sr-only">(current)</span></a>
 								</li>
 								<li class="page-item"><a class="page-link" href="#">3</a></li>
 								<li class="page-item">
@@ -770,7 +1002,7 @@
 				<div class="row">
 					<div class="col-12 col-md-6 col-lg-3">
 						<div class="about-company">
-							<span class="title">About Company</span>
+							<span class="d-block title">About Company</span>
 							<p>Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus. </p>
 							<ul>
 								<li><i class="fas fa-map-marker-alt"></i>PO Box 16122 Collins Street West 
@@ -781,7 +1013,7 @@
 					</div>
 					<div class="col-12 col-md-6 col-lg-3">
 						<div class="community">
-							<span class="title">Join Our Community</span>
+							<span class="d-block title">Join Our Community</span>
 							<ul>
 								<li><a href="#"><i class="fas fa-angle-right"></i>Home</a></li>
 								<li><a href="#"><i class="fas fa-angle-right"></i>Forums</a></li>
@@ -807,11 +1039,11 @@
 						<div class="follow">
 							<span class="title">Follow Us On</span>
 							<ul class="social">
-								<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-								<li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
-								<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li class="icon-fs-icon"><a href="#"></a></li>
+								<li class="icon-twitter-icon"><a href="#"></a></li>
+								<li class="icon-youtube-icon"><a href="#"></a></li>
+								<li class="icon-pinterest-icon"><a href="#"></a></li>
+								<li class="icon-linkedin"><a href="#"></a></li>
 							</ul>
 							<p>Newsletter Sign Up!</p>
 							<form action="#" method="post">
@@ -834,5 +1066,8 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/libs/nouislider.min.js"></script>
+	<script src="js/all.js"></script>
+	<script src="js/common.js"></script>
 </body>
 </html>
