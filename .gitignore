@@ -6,3 +6,5 @@ package-lock.json
 
 app/css/all.css
 app/js/all.js
+
+dist/
