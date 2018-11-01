@@ -37,6 +37,16 @@ $(document).ready(function(){
     }
   ]
 	});
+  $('.submit-button').click(function(){
+    $('.show-blok-login').show();
+    $('.show-blok-logout').hide();
+    $(".shopping-cart-notification").css("background", "#95c85a");
+  });
+  $('.button-margin-logout').click(function(){
+    $('.show-blok-logout').show();
+    $('.show-blok-login').hide();
+    $(".shopping-cart-notification").css("background", "#e74c3c");
+  });
 });
 
 /////////////////// 

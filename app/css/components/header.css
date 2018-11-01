@@ -440,10 +440,10 @@
 /*////////////////////comment to hide////////////////////////////*/
 
 
-/*.y {
+/*.show-blok-login {
 	display: none;
 }
-.n {
+.show-blok-logout {
 	display: block;
 }
 .shopping-cart-notification {
@@ -455,9 +455,9 @@
 /*////////////////////comment to show////////////////////////////*/
 
 
-.y {
+.show-blok-login {
 	display: block;
 }
-.n {
+.show-blok-logout {
 	display: none;
 }

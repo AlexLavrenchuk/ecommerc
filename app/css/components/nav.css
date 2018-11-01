@@ -36,9 +36,10 @@ header {
 
 .navbar-bottom .navbar-toggler {
 	color: #fff;
+	background: #fff;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) {	
 	.navbar-bottom .navbar-nav .nav-link {
 		padding: 0;
 		text-align: left;
@@ -50,5 +51,19 @@ header {
 
 	.navbar-bottom .nav-item:last-child {
 		margin-right: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.header-bottom {
+		padding: 0;
+	}
+	.navbar {
+		position: static;
+	}
+	.navbar-bottom .navbar-toggler {
+		position: absolute;
+		top: 24px;
+		left: 25px;
 	}
 }
