@@ -339,8 +339,14 @@
 	.login {
 		margin: 0;
 	}
+	.navbar-brand {
+		margin-left: 60px;
+	}
 }
 @media (max-width: 767px){
+	.navbar-brand {
+		margin-left: 0px;
+	}
 	.header-top {
     	padding: 23px 75px;
 	}
