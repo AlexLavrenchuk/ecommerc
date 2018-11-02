@@ -36,7 +36,6 @@ header {
 
 .navbar-bottom .navbar-toggler {
 	color: #fff;
-	background: #fff;
 }
 
 @media (min-width: 992px) {	
@@ -54,7 +53,7 @@ header {
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
 	.header-bottom {
 		padding: 0;
 	}
@@ -65,5 +64,10 @@ header {
 		position: absolute;
 		top: 24px;
 		left: 25px;
+	}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	.navbar-brand {
+		margin-left: 60px;
 	}
 }
