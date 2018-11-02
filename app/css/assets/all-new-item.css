@@ -13,6 +13,10 @@
 	padding: 50px 15px 80px 15px;
 }
 
+.all-new-item a {
+	color: inherit;
+}
+
 ul,
 ol,
 li {
@@ -157,10 +161,25 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 	color: gold;
 } 
 
+.wrapp-stars {
+	width: 57.25px;
+	position: relative;
+}
+
+.rank-stars-acive {
+	position: absolute;
+	overflow: hidden;
+}
+
 .average {
 	font-weight: normal;
 	font-size: 12px;
 	margin-left: 10px;
+}
+
+.card-title-holder a:hover {
+font-weight: bold;
+text-decoration: none;
 }
 
 .new-card-title {
@@ -400,6 +419,10 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+	.view-selection {
+		display: none!important;
+	}
+
 	.top-10 .card {
 		display: none;
 	}
@@ -463,6 +486,10 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
+	.view-selection {
+		display: none;
+	}
+
 	.top-10 .card {
 		display: none;
 	}
@@ -539,6 +566,10 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 }
 
 @media (max-width: 479px) {
+.view-selection {
+	display: none!important;
+}
+
 	.top-10 .card {
 		display: none;
 	}
@@ -599,7 +630,8 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 
 	.row-for-tablet {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: nowrap;
 	}
 
 	.btn-search-green {
@@ -614,10 +646,6 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 		margin: 10px;
 	}
 
-	.demand {
-		flex-direction: column;
-	}
-
 	.comment, .like {
 		padding: 0;
 		margin: 0;
@@ -628,5 +656,3 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 	}
 
 }
-
-
