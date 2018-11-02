@@ -63,8 +63,23 @@ $('.view-selection .fa-th-large').click(function(){
 });
 
 $('.top-10 .btn-search-green').click(function(){
-  $('.top-10 .card').addClass('visible-tablet');
+  $('.top-10 .card').toggleClass('visible-tablet');
 });
+
+//////toggleText//////// 
+jQuery.fn.extend({
+    toggleText: function (a, b){
+        var isClicked = false;
+        var that = this;
+        this.click(function (){
+            if (isClicked) { that.text(a); isClicked = false; }
+            else { that.text(b); isClicked = true; }
+        });
+        return this;
+    }
+});
+
+$('.btn-close').toggleText("View All", "Close");
 
 ////////range////////// 
 var softSlider = document.getElementById('soft');
