@@ -6,7 +6,6 @@
 			<title>setting-personal-info</title>
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link rel="stylesheet" href="css/all.css">
 		</head>
 		<body>
@@ -306,65 +305,89 @@
 				<!-- ............................main_setting-personal-info...................................-->
 				<div class="main-setting-personal-info">
 					<div class="container">
+						<div class="row">
+							<div class="col">
+								<nav aria-label="breadcrumb">
+								  <ol class="breadcrumb navigation-settings">
+								    <li class="breadcrumb-item navigation-settings-item"><a class="avigation-settings-link" href="#">Home</a></li>
+								    <li class="breadcrumb-item navigation-settings-item active" aria-current="page">Settings</li>
+								  </ol>
+								</nav>
+							</div>
+						</div>
 					  <div class="row">
-					    <div class="col-3">
-					      One of three columns
+					    <div class="col-lg-3 col-md-12">
+					      <div class="nav nav-pills link-tabs-wrap" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								  <a class="link-tabs active" id="v-pills-personal-tab" data-toggle="pill" href="#v-pills-personal" role="tab" aria-controls="v-pills-personal" aria-selected="true"><i class="fas fa-angle-right link-tabs-arrow"></i>Personal Information</a>
+								  <a class="link-tabs" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-angle-right link-tabs-arrow"></i>Profile</a>
+								  <a class="link-tabs" id="v-pills-badges-tab" data-toggle="pill" href="#v-pills-badges" role="tab" aria-controls="v-pills-badges" aria-selected="false"><i class="fas fa-angle-right link-tabs-arrow"></i>Badges</a>
+								  <a class="link-tabs" id="v-pills-e-mail-tab" data-toggle="pill" href="#v-pills-e-mail" role="tab" aria-controls="v-pills-e-mail" aria-selected="false"><i class="fas fa-angle-right link-tabs-arrow"></i>E-mail Settings</a>
+								  <a class="link-tabs" id="v-pills-social-tab" data-toggle="pill" href="#v-pills-social" role="tab" aria-controls="v-pills-social" aria-selected="false"><i class="fas fa-angle-right link-tabs-arrow"></i>Social Network</a>
+								</div>
 					    </div>
-					    <div class="col-9">
-					     <div class="personal-info">
-					     	<div class="title-box">
-					     		<h5 class="title-text">Personal Information</h5>
-					     	</div>
-					     	<div class="info">
-					     		<form>
-									  <div class="form-group">
-									    <label for="formGroupExampleInput">First Name</label>
-									    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
-									  </div>
-									  <div class="form-group">
-									    <label for="formGroupExampleInput2">Last Name</label>
-									    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-									  </div>
-									  <div class="form-group">
-									    <label for="formGroupExampleInput3">Company Name</label>
-									    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="">
-									  </div>
-									  <div class="form-group">
-									    <label for="exampleFormControlSelect">Country</label>
-									    <select class="form-control" id="exampleFormControlSelect">
-									      <option>Select Your Country</option>
-									      <option>2</option>
-									      <option>3</option>
-									      <option>4</option>
-									      <option>5</option>
-									    </select>
-									  </div>
-									  <div class="form-group">
-									    <label for="formGroupExampleInput4">Address Line 1</label>
-									    <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="">
-									  </div>
-									  <div class="form-group">
-									    <label for="formGroupExampleInput5">Address Line 2</label>
-									    <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="">
-									  </div>
-									  <div class="form-group">
-									    <label for="formGroupExampleInput6">City</label>
-									    <input type="text" class="form-control" id="formGroupExampleInput6" placeholder="">
-									  </div>
-									  <div class="form-group">
-									    <label for="formGroupExampleInput7">State / Province / Region</label>
-									    <input type="text" class="form-control" id="formGroupExampleInput7" placeholder="">
-									  </div>
-									  <div class="form-group">
-									    <label for="formGroupExampleInput8">Zip / Postal Code</label>
-									    <input type="text" class="form-control" id="formGroupExampleInput8" placeholder="">
-									  </div>
-									  <div class="update">
-									  	<button type="submit" class="btn btn-success">Update</button>
-									  </div>
-									</form>
-					     	</div>
-					     </div>					    
+					    <div class="col-lg-9 col-md-12">
+					    	<div class="tab-content" id="v-pills-tabContent">
+								  <div class="tab-pane fade show active" id="v-pills-personal" role="tabpanel" aria-labelledby="v-pills-personal-tab">
+								  	<div class="personal-info">
+					     				<div class="title-box">
+					     					<h5 class="title-text">Personal Information</h5>
+					     				</div>
+					     				<div class="info">
+					     					<form>
+									 				<div class="form-group info-item justify-content-between">
+									    			<label for="formGroupExampleInput">First Name</label>
+									   				<input type="text" class="form-control my-input" id="formGroupExampleInput" placeholder="">
+									  			</div>
+									  			<div class="form-group info-item justify-content-between">
+									    			<label for="formGroupExampleInput2">Last Name</label>
+									   				<input type="text" class="form-control my-input" id="formGroupExampleInput2" placeholder="">
+									 				</div>
+									  			<div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput3">Company Name</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput3" placeholder="">
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="exampleFormControlSelect">Country</label>
+													  <select class="form-control my-input" id="exampleFormControlSelect">					    	
+														  <option>Select Your Country</option>
+														  <option>United Kingdom</option>
+														  <option>Germany</option>
+														  <option>France</option>
+														  <option>Italy</option>
+														</select>
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput4">Address Line 1</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput4" placeholder="">
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput5">Address Line 2</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput5" placeholder="">
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput6">City</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput6" placeholder="">
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput7">State / Province / Region</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput7" placeholder="">
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput8">Zip / Postal Code</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput8" placeholder="">
+												  </div>
+												  <div class="update">
+												  	<button type="submit" class="custom-button-submit">Update</button>
+												  </div>
+												</form>
+					     				</div>
+								    </div>
+									</div>
+									<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+									<div class="tab-pane fade" id="v-pills-badges" role="tabpanel" aria-labelledby="v-pills-badges-tab">...</div>
+									<div class="tab-pane fade" id="v-pills-e-mail" role="tabpanel" aria-labelledby="v-pills-e-mail-tab">...</div>
+									<div class="tab-pane fade" id="v-pills-social" role="tabpanel" aria-labelledby="v-pills-social-tab">...</div>
+								</div>					     					    
 					    </div>					  
 					  </div>
 					</div>
