@@ -19,6 +19,12 @@
 .tel {
 	color: #546e7a;
 }
+.tel:hover,
+.help:hover {
+	color: #1b9f20;
+	transition: .3s;
+	text-decoration: none;
+}
 
 /*..................icon........................*/
 .icon {

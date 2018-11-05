@@ -1,343 +1,468 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Personal info</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/all.css">
-</head>
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="container header-top">
-				<nav class="navbar navbar-expand-lg navbar-light rounded">
-					<a class="navbar-brand logo" href="#"><img src="img/logo.png" alt="logo"></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarsExample09">
-						<div class="d-flex ml-auto">
-							<p class="mb-0 mt-17"><a class="help" href="#">Need help?</a> Talk to an expert: +61 3 8376 6284</p>
-							<ul class="navbar-nav ml-auto">
-								<li class="nav-item dropdown">
-									<a class="nav-link bg-circle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<i class="far fa-bell"></i>
-										<span class="smoll-circle color-circle1">8</span>
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>setting-personal-info</title>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+			<link rel="stylesheet" href="css/all.css">
+		</head>
+		<body>
+			<div class="wrapper">
+				<header class="header">
+					<div class="header-top">
+						<div class="header-top-center">
+							<div class="container height-header-top d-flex align-items-center flex-wrap">
+								<div class="logo mr-auto">
+									<a class="navbar-brand logo-link" href="#">
+										<img src="img/logo.png" alt="logo">
 									</a>
-									<div class="dropdown-menu my-menu-left box-shadow-my" aria-labelledby="dropdown09">
-										<ul class="my-menu">
-											<a class="dropdown-item p-0 active-menu" href="#">
-												<li class="d-flex justify-content-between">
-													<div class="mar-menu">
-														<div class="img-circle"></div>
-													</div>
-													<div class="text-menu">
-														<div class="d-flex flex-column">
-															<span class="help-menu">Need WP Help!</span>
-															<span class="data-menu">01 Dec, 2016</span>
-														</div>
-													</div>
-													<div class="bell-menu ml-auto">
-														<i class="far fa-bell"></i>
-													</div>			                		
-												</li>
+								</div>
+								<div class="help-tel">
+									<a class="help" href="#">
+										<span>Need help?</span>
+									</a>
+									<a class="tel" href="tel:+61383766284">
+										<span>Talk to an expert: +61 3 8376 6284</span>
+									</a>
+								</div>
+								<div class="icon d-flex">
+									<div class="bell show-blok-login">
+										<div class="dropdown">
+											<a class="icon-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="far fa-bell"></i>
+												<span class="bell-notification">8</span>
 											</a>
-											<a class="dropdown-item p-0 active-menu" href="#">
-												<li class="d-flex justify-content-between br-top">
-													<div class="mar-menu">
-														<div class="img-circle"></div>
-													</div>
-													<div class="text-menu">
-														<div class="d-flex flex-column">
-															<span class="help-menu">Need WP Help!</span>
-															<span class="data-menu">01 Dec, 2016</span>
-														</div>
-													</div>
-													<div class="bell-menu ml-auto">
-														<i class="far fa-bell"></i>
-													</div>			                		
-												</li>
-											</a>
-											<a class="dropdown-item p-0 active-menu" href="#">
-												<li class="d-flex justify-content-between br-top">
-													<div class="mar-menu">
-														<div class="img-circle"></div>
-													</div>
-													<div class="text-menu">
-														<div class="d-flex flex-column">
-															<span class="help-menu">Need WP Help!</span>
-															<span class="data-menu">01 Dec, 2016</span>
-														</div>
-													</div>
-													<div class="bell-menu ml-auto">
-														<i class="far fa-bell"></i>
-													</div>			                		
-												</li>
-											</a>
-										</ul>
+											<div class="dropdown-menu my-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+												<a class="dropdown-item menu my-hover d-flex" href="#">
+													<div class="img-menu">
+				                		<div class="img-circle"></div>
+				              		</div>
+				                	<div class="text-menu d-flex align-items-center">
+				                		<div class="text-menu-item d-flex flex-column">
+				                			<span class="help-menu">Need WP Help!</span>
+				                			<span class="data-menu">01 Dec, 2016</span>
+				                		</div>
+				                	</div>
+							            <div class="bell-menu ml-auto">
+							              <i class="far fa-bell"></i>
+							            </div>
+												</a>
+												<a class="dropdown-item menu my-hover d-flex" href="#">
+													<div class="img-menu">
+				                		<div class="img-circle"></div>
+				                	</div>
+				                	<div class="text-menu d-flex align-items-center">
+				                		<div class="text-menu-item d-flex flex-column">
+				                			<span class="help-menu">Need WP Help!</span>
+				                			<span class="data-menu">26 Nov, 2016</span>
+				                		</div>
+				                	</div>
+							            <div class="bell-menu ml-auto">
+							              <i class="far fa-bell"></i>
+							            </div>
+												</a>
+												<a class="dropdown-item menu my-hover d-flex" href="#">
+													<div class="img-menu">
+				                		<div class="img-circle"></div>
+				                	</div>
+				                	<div class="text-menu d-flex align-items-center">
+				                		<div class="text-menu-item d-flex flex-column">
+				                			<span class="help-menu">Psd Template Help!</span>
+				                			<span class="data-menu">26 Nov, 2016</span>
+				                		</div>
+				                	</div>
+							            <div class="bell-menu ml-auto">
+							              <i class="far fa-bell"></i>
+							            </div>
+												</a>
+											</div>
+										</div>
 									</div>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link bg-circle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<i class="far fa-envelope"></i>
-										<span class="smoll-circle color-circle2">5</span>
-									</a>
-									<div class="dropdown-menu my-menu-left box-shadow-my" aria-labelledby="dropdown09">
-										<ul class="my-menu">
-											<a class="dropdown-item p-0 active-menu" href="#">
-												<li class="d-flex justify-content-between">
-													<div class="mar-menu">
-														<div class="img-circle"></div>
-													</div>
-													<div class="text-menu">
-														<div class="d-flex flex-column">
-															<span class="name-menu">Kazi Fahim</span>
-															<span class="help-menu">Need WP Help!</span>
-															<span class="data-menu">01 Dec, 2016</span>
-														</div>
-													</div>
-													<div class="bell-menu ml-auto">			                			
-														<i class="far fa-envelope active-menu"></i>
-													</div>			                		
-												</li>
+									<div class="envelope show-blok-login">
+										<div class="dropdown">
+											<a class="icon-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="far fa-envelope"></i>
+												<span class="envelope-notification">5</span>
 											</a>
-											<a class="dropdown-item p-0 active-menu" href="#">
-												<li class="d-flex justify-content-between br-top">
-													<div class="mar-menu">
-														<div class="img-circle"></div>
-													</div>
-													<div class="text-menu">
-														<div class="d-flex flex-column">
-															<span class="name-menu">Kazi Fahim</span>
-															<span class="help-menu">Need WP Help!</span>
-															<span class="data-menu">01 Dec, 2016</span>
-														</div>
-													</div>
-													<div class="bell-menu ml-auto">
-														<i class="far fa-envelope"></i>
-													</div>			                		
-												</li>
-											</a>
-											<a class="dropdown-item p-0 active-menu" href="#">
-												<li class="d-flex justify-content-between br-top">
-													<div class="mar-menu">
-														<div class="img-circle"></div>
-													</div>
-													<div class="text-menu">
-														<div class="d-flex flex-column">
-															<span class="name-menu">Kazi Fahim</span>
-															<span class="help-menu">Need WP Help!</span>
-															<span class="data-menu">01 Dec, 2016</span>
-														</div>
-													</div>
-													<div class="bell-menu ml-auto">
-														<i class="far fa-envelope"></i>
-													</div>			                		
-												</li>
-											</a>
-										</ul>
+											<div class="dropdown-menu my-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+												<a class="dropdown-item menu my-hover d-flex" href="#">
+													<div class="img-menu">
+				                		<div class="img-circle"></div>
+				                	</div>
+				                	<div class="text-menu d-flex align-items-center">
+				                		<div class="text-menu-item d-flex flex-column">
+				                			<span class="name-menu">Kazi Fahim</span>
+				                			<span class="help-menu">Need WP Help!</span>
+				                			<span class="data-menu">01 Dec, 2016</span>
+				                		</div>
+				                	</div>
+							            <div class="bell-menu ml-auto">
+							              <i class="far fa-envelope"></i>
+							            </div>
+												</a>
+												<a class="dropdown-item menu my-hover d-flex" href="#">
+													<div class="img-menu">
+				                		<div class="img-circle"></div>
+				                	</div>
+				                	<div class="text-menu d-flex align-items-center">
+				                		<div class="text-menu-item d-flex flex-column">
+				                			<span class="name-menu">Richi Lenal</span>
+				                			<span class="help-menu">Need WP Help!</span>
+				                			<span class="data-menu">26 Nov, 2016</span>
+				                		</div>
+				                	</div>
+							            <div class="bell-menu ml-auto">
+							              <i class="far fa-envelope"></i>
+							            </div>
+												</a>
+												<a class="dropdown-item menu my-hover d-flex" href="#">
+													<div class="img-menu">
+				                		<div class="img-circle"></div>
+				                	</div>
+				                	<div class="text-menu d-flex align-items-center">
+				                		<div class="text-menu-item d-flex flex-column">
+				                			<span class="name-menu">PsdBosS</span>
+				                			<span class="help-menu">Psd Template Help!</span>
+				                			<span class="data-menu last-data">26 Nov, 2016</span>
+				                		</div>
+				                	</div>
+							            <div class="bell-menu ml-auto">
+							              <i class="fas fa-reply"></i>
+							            </div>
+												</a>
+											</div>
+										</div>
 									</div>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link bg-circle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<i class="fas fa-shopping-cart"></i>
-										<span class="smoll-circle color-circle3">8</span>
-									</a>
-									<div class="dropdown-menu my-menu-left box-shadow-my" aria-labelledby="dropdown09">
-										<ul class="my-menu">
-											<a class="dropdown-item p-0" href="#">
-												<li class="d-flex">
-													<div class="mar-menu">
-														<div class="img-product"></div>
-													</div>
-													<div class="text-menu">
-														<div class="d-flex flex-column">
-															<span class="name-menu">Grand Ballet</span>
-															<span class="WordPress">WordPress</span>
-															<span class="data-menu">$59</span>
-														</div>
-													</div>			                		
-												</li>
+									<div class="shopping-cart">
+										<div class="dropdown">
+											<a class="icon-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="fas fa-shopping-cart"></i>
+												<span class="shopping-cart-notification">8</span>
 											</a>
-											<a class="dropdown-item p-0" href="#">
-												<li class="d-flex br-top">
-													<div class="mar-menu">
-														<div class="img-product"></div>
+											<div class="dropdown-menu my-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+												<a class="dropdown-item menu d-flex" href="#">
+													<div class="img-menu">
+				                		<div class="img-product"></div>
+				                	</div>
+				                	<div class="text-menu d-flex align-items-center">
+				                		<div class="text-menu-item d-flex flex-column">
+				                			<span class="name-product">Grand Ballet</span>
+				                			<span class="help-menu">WordPress</span>
+				                			<span class="price-product">$59</span>
+				                		</div>
+				                	</div>						                		
+												</a>
+												<a class="dropdown-item menu d-flex" href="#">
+													<div class="img-menu">
+				                		<div class="img-product"></div>
+				                	</div>
+				                	<div class="text-menu d-flex align-items-center">
+				                		<div class="text-menu-item d-flex flex-column">
+				                			<span class="name-product">Apple Device</span>
+				                			<span class="help-menu">WordPress</span>
+				                			<span class="price-product">$59</span>
+				                		</div>
+				                	</div>						                		
+												</a>
+												<div class="menu shopping-menu d-flex flex-column">								
+													<div class="total d-flex justify-content-between">
+														<span class="total-text">Total</span>
+														<span class="total-cash">$118</span>
 													</div>
-													<div class="text-menu">
-														<div class="d-flex flex-column">
-															<span class="name-menu">Apple Device</span>
-															<span class="WordPress">WordPress</span>
-															<span class="data-menu">$59</span>
-														</div>
-													</div>			                		
-												</li>
-											</a>
-											<li class="d-flex flex-column br-top">
-												<div class="d-flex justify-content-between">
-													<span class="total-menu">Total</span>
-													<span class="total-menu">$(59+59)</span>
+				                	<div class="d-flex justify-content-between">
+				                		<button type="button" class="btn btn-success my-button my-button-green">Go to Cart</button>
+				                		<button type="button" class="btn btn-danger my-button">Go to Checkout</button>
+				                	</div>						                		
 												</div>
-												<div class="d-flex justify-content-between">
-													<button type="button" class="btn btn-success border-radius-none">Go to Cart</button>
-													<button type="button" class="btn btn-danger border-radius-none">Go to Checkout</button>
-												</div>                				                		
-											</li>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="login">
+									<div class="dropdown show-blok-login">
+										<a class="d-flex login-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<div class="img-login"></div>
+											<div class="text-login d-flex flex-column">									
+												<span class="name">Mike Hussy<i class="fas fa-angle-down my-arrow-down"></i></span>
+												<span class="cash">$171.00</span>									
+											</div>
+										</a>
+										<div class="dropdown-menu my-menu-login" aria-labelledby="dropdownMenuLink">
+											<a class="dropdown-item dropdown-text" href="#"><i class="fas fa-angle-right dropdown-arrow-right"></i>Profile Page</a>
+							        <a class="dropdown-item dropdown-text" href="#"><i class="fas fa-angle-right dropdown-arrow-right"></i>Portfolio</a>
+							        <a class="dropdown-item dropdown-text" href="#"><i class="fas fa-angle-right dropdown-arrow-right"></i>Account Setting</a>
+							        <a class="dropdown-item dropdown-text" href="#"><i class="fas fa-angle-right dropdown-arrow-right"></i>Downloads</a>
+							        <a class="dropdown-item dropdown-text" href="#"><i class="fas fa-angle-right dropdown-arrow-right"></i>Wishlist</a>
+							        <a class="dropdown-item dropdown-text" href="#"><i class="fas fa-angle-right dropdown-arrow-right"></i>Upload Item</a>
+							        <a class="dropdown-item dropdown-text" href="#"><i class="fas fa-angle-right dropdown-arrow-right"></i>Statement</a>
+							        <a class="dropdown-item dropdown-text" href="#"><i class="fas fa-angle-right dropdown-arrow-right"></i>Withdraws</a>
+										</div>
+									</div>
+									<button type="button" class="btn btn-success show-blok-logout button-login-green" data-toggle="modal" data-target="#exampleModalCenter">Login</button>
+								</div>							
+								<div class="register">
+									<button type="button" class="btn btn-danger button-margin-register show-blok-logout">Register</button>
+									<button type="button" class="btn btn-danger button-margin-logout show-blok-login">Logout</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- .............................Modal................................. -->
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered my-width" role="document">
+					    <div class="modal-content modal-my-style">
+					      <div class="modal-header modal-my-style-header">					        
+					        <button type="button" class="close close-color" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body modal-body-my">
+					      	<h2 class="modal-title modal-login mb-3" id="exampleModalLongTitle">login</h2>					      
+					      	<form class="form-style-my">
+							  		<div class="mb-2 position-relative">
+							    		<i class="fas fa-user modal-label"></i>
+							    		<input type="name" class="form-control input-my" placeholder="Name">							   
+							 			</div>
+							 			<div class="mb-3 position-relative">
+							    		<i class="fas fa-unlock modal-label"></i>
+							    		<input type="password" class="form-control input-my" placeholder="Password">
+							  		</div>
+							  		<div class="but-sub d-flex justify-content-between mb-3">
+							  			<div class="but-sub-width">
+							  				<button type="submit" class="submit-button">Submit</button>
+							  			</div>
+								  		<a href="#" class="register-link">
+								    		<i class="far fa-edit"></i>
+								    		<span>Create An Account?</span>
+								  		</a>								  		
+							  		</div>
+							  		<a class="lost-password" href="#">Lost Password?</a>							  		
+									</form>									
+								</div>					     
+					    </div>
+					  </div>
+					</div>
+					<!-- ............................nav...................................-->		
+					<div class="header-bottom">
+						<div class="header-bottom-center">
+							<div class="container">
+								<nav class="navbar navbar-expand-lg navbar-bottom navbar-light">
+								  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								    <span class="navbar-toggler-icon"></span>
+								  </button>
+								  <div class="collapse navbar-collapse" id="navbarNav">
+								    <ul class="navbar-nav">
+								      <li class="nav-item">
+								        <a class="nav-link" href="#">Home</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link" href="#">About</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link" href="#">WordPress</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link" href="#">Joomla</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link" href="#">PSD</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link" href="#">Plugins</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link" href="#">Components</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link" href="#">Pages</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link" href="#">Contact</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link" href="#">Help</a>
+								      </li>
+								    </ul>
+								  </div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- ............................search...................................-->
+				<div class="search">
+					<h1 class="search-titel">Welcome To Foxtar Market Place!</h1>
+					<h3 class="search-subtitel">Premium WordPress Themes, Web Templates and Many More...</h3>
+					<form>
+						<div class="search_box d-flex m-auto">
+							<input class="search_text" name="searchitem" type="search" placeholder="Search Your Keywords . . .">
+							<button class="search_button" type="submit"><i class="fas fa-search my-search"></i></button>
+						</div>
+					</form>
+				</div>
+				<!-- ............................main_setting-personal-info...................................-->
+				<div class="main-setting-personal-info">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<nav aria-label="breadcrumb">
+								  <ol class="breadcrumb navigation-settings">
+								    <li class="breadcrumb-item navigation-settings-item"><a class="avigation-settings-link" href="#">Home</a></li>
+								    <li class="breadcrumb-item navigation-settings-item active" aria-current="page">Settings</li>
+								  </ol>
+								</nav>
+							</div>
+						</div>
+					  <div class="row">
+					    <div class="col-lg-3 col-md-12">
+					      <div class="nav nav-pills link-tabs-wrap" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								  <a class="link-tabs active" id="v-pills-personal-tab" data-toggle="pill" href="#v-pills-personal" role="tab" aria-controls="v-pills-personal" aria-selected="true"><i class="fas fa-angle-right link-tabs-arrow"></i>Personal Information</a>
+								  <a class="link-tabs" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-angle-right link-tabs-arrow"></i>Profile</a>
+								  <a class="link-tabs" id="v-pills-badges-tab" data-toggle="pill" href="#v-pills-badges" role="tab" aria-controls="v-pills-badges" aria-selected="false"><i class="fas fa-angle-right link-tabs-arrow"></i>Badges</a>
+								  <a class="link-tabs" id="v-pills-e-mail-tab" data-toggle="pill" href="#v-pills-e-mail" role="tab" aria-controls="v-pills-e-mail" aria-selected="false"><i class="fas fa-angle-right link-tabs-arrow"></i>E-mail Settings</a>
+								  <a class="link-tabs" id="v-pills-social-tab" data-toggle="pill" href="#v-pills-social" role="tab" aria-controls="v-pills-social" aria-selected="false"><i class="fas fa-angle-right link-tabs-arrow"></i>Social Network</a>
+								</div>
+					    </div>
+					    <div class="col-lg-9 col-md-12">
+					    	<div class="tab-content" id="v-pills-tabContent">
+								  <div class="tab-pane fade show active" id="v-pills-personal" role="tabpanel" aria-labelledby="v-pills-personal-tab">
+								  	<div class="personal-info">
+					     				<div class="title-box">
+					     					<h5 class="title-text">Personal Information</h5>
+					     				</div>
+					     				<div class="info">
+					     					<form>
+									 				<div class="form-group info-item justify-content-between">
+									    			<label for="formGroupExampleInput">First Name</label>
+									   				<input type="text" class="form-control my-input" id="formGroupExampleInput" placeholder="">
+									  			</div>
+									  			<div class="form-group info-item justify-content-between">
+									    			<label for="formGroupExampleInput2">Last Name</label>
+									   				<input type="text" class="form-control my-input" id="formGroupExampleInput2" placeholder="">
+									 				</div>
+									  			<div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput3">Company Name</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput3" placeholder="">
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="exampleFormControlSelect">Country</label>
+													  <select class="form-control my-input" id="exampleFormControlSelect">					    	
+														  <option>Select Your Country</option>
+														  <option>United Kingdom</option>
+														  <option>Germany</option>
+														  <option>France</option>
+														  <option>Italy</option>
+														</select>
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput4">Address Line 1</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput4" placeholder="">
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput5">Address Line 2</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput5" placeholder="">
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput6">City</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput6" placeholder="">
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput7">State / Province / Region</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput7" placeholder="">
+												  </div>
+												  <div class="form-group info-item justify-content-between">
+												    <label for="formGroupExampleInput8">Zip / Postal Code</label>
+												    <input type="text" class="form-control my-input" id="formGroupExampleInput8" placeholder="">
+												  </div>
+												  <div class="update">
+												  	<button type="submit" class="custom-button-submit">Update</button>
+												  </div>
+												</form>
+					     				</div>
+								    </div>
+									</div>
+									<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+									<div class="tab-pane fade" id="v-pills-badges" role="tabpanel" aria-labelledby="v-pills-badges-tab">...</div>
+									<div class="tab-pane fade" id="v-pills-e-mail" role="tabpanel" aria-labelledby="v-pills-e-mail-tab">...</div>
+									<div class="tab-pane fade" id="v-pills-social" role="tabpanel" aria-labelledby="v-pills-social-tab">...</div>
+								</div>					     					    
+					    </div>					  
+					  </div>
+					</div>
+				</div>
+				<!-- ............................footer...................................-->	
+				<footer class="footer">
+					<div class="footer-hero">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="about-company">
+										<span class="d-block title">About Company</span>
+										<p>Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus. </p>
+										<ul>
+											<li><i class="fas fa-map-marker-alt"></i>PO Box 16122 Collins Street West 
+											Victoria 8007 Australia</li>
+											<li><i class="fas fa-phone"></i>+61 3 8376 6284</li>
 										</ul>
 									</div>
-								</li>
-								<li class="nav-item dropdown p-0">
-									<a class="nav-link p-0" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<ul class="d-flex">
-											<li>
-												<span class="bg-login"></span>
-											</li>
-											<li class="d-flex flex-column p-2">
-												<span class="name">Mike Hussy<i class="fas fa-angle-down"></i></span>
-												<span class="total-cash">$171.00</span>
-											</li>
-										</ul>			              	
-									</a>
-									<div class="dropdown-menu box-shadow-my" aria-labelledby="dropdown09">
-										<a class="dropdown-item color-arrowe-menu" href="#"><i class="fas fa-angle-right"></i>Profile Page</a>
-										<a class="dropdown-item color-arrowe-menu" href="#"><i class="fas fa-angle-right"></i>Portfolio</a>
-										<a class="dropdown-item color-arrowe-menu" href="#"><i class="fas fa-angle-right"></i>Account Setting</a>
-										<a class="dropdown-item color-arrowe-menu" href="#"><i class="fas fa-angle-right"></i>Downloads</a>
-										<a class="dropdown-item color-arrowe-menu" href="#"><i class="fas fa-angle-right"></i>Wishlist</a>
-										<a class="dropdown-item color-arrowe-menu" href="#"><i class="fas fa-angle-right"></i>Upload Item</a>
-										<a class="dropdown-item color-arrowe-menu" href="#"><i class="fas fa-angle-right"></i>Statement</a>
-										<a class="dropdown-item color-arrowe-menu" href="#"><i class="fas fa-angle-right"></i>Withdraws</a>
+								</div>
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="community">
+										<span class="d-block title">Join Our Community</span>
+										<ul>
+											<li><a href="#"><i class="fas fa-angle-right"></i>Home</a></li>
+											<li><a href="#"><i class="fas fa-angle-right"></i>Forums</a></li>
+											<li><a href="#"><i class="fas fa-angle-right"></i>Become an Author</a></li>
+											<li><a href="#"><i class="fas fa-angle-right"></i>Community Meetups</a></li>
+											<li><a href="#"><i class="fas fa-angle-right"></i>Become an Affiliate</a></li>
+										</ul>
 									</div>
-								</li>
-								<li>
-									<button type="button" class="btn btn-success d-none">Login</button>
-								</li>
-								<li>
-									<button type="button" class="btn btn-danger d-none">Register</button>
-									<button type="button" class="btn btn-danger">Logout</button>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</div><!-- end header top -->
-			<div class="header-bottom">
-				<div class="header-bottom-center">
-					<div class="container">
-						<nav class="navbar navbar-expand-lg navbar-bottom navbar-light">
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarNav">
-								<ul class="navbar-nav">
-									<li class="nav-item">
-										<a class="nav-link" href="#">Home</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">About</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">WordPress</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Joomla</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">PSD</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Plugins</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Components</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Pages</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Contact</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Help</a>
-									</li>
-								</ul>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</div><!-- end header bottom -->
-		</header>
-		<footer class="footer">
-			<div class="footer-hero">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-md-6 col-lg-3">
-							<div class="about-company">
-								<span class="title">About Company</span>
-								<p>Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus. </p>
-								<ul>
-									<li><i class="fas fa-map-marker-alt"></i>PO Box 16122 Collins Street West 
-									Victoria 8007 Australia</li>
-									<li><i class="fas fa-phone"></i>+61 3 8376 6284</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-12 col-md-6 col-lg-3">
-							<div class="community">
-								<span class="title">Join Our Community</span>
-								<ul>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Home</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Forums</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Become an Author</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Community Meetups</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Become an Affiliate</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-12 col-md-6 col-lg-3">
-							<div class="help">
-								<span class="title">Need Helps?</span>
-								<ul>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Help Center</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Forums</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Become an Author</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Community Meetups</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Become an Affiliate</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-12 col-md-6 col-lg-3">
-							<div class="follow">
-								<span class="title">Follow Us On</span>
-								<ul class="social">
-									<li><a href="#" class="icon-fs-icon"></a></li>
-									<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-									<li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
-									<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-									<li><a href="#" class="icon-linkedin"></a></li>
-								</ul>
-								<p>Newsletter Sign Up!</p>
-								<form action="#" method="post">
-									<div class="input-line ps-top-to-bottom ">									
-										<label for="e-mail" class=
-										"screen"></label>
-										<input type="email" name="name" required placeholder="E-mail Address" id="e-mail">
-										<button class="btn-send-email"><i class="fas fa-location-arrow"></i></button>			
+								</div>
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="help">
+										<span class="title">Need Helps?</span>
+										<ul>
+											<li><a href="#"><i class="fas fa-angle-right"></i>Help Center</a></li>
+											<li><a href="#"><i class="fas fa-angle-right"></i>Forums</a></li>
+											<li><a href="#"><i class="fas fa-angle-right"></i>Become an Author</a></li>
+											<li><a href="#"><i class="fas fa-angle-right"></i>Community Meetups</a></li>
+											<li><a href="#"><i class="fas fa-angle-right"></i>Become an Affiliate</a></li>
+										</ul>
 									</div>
-								</form>
+								</div>
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="follow">
+										<span class="title">Follow Us On</span>
+										<ul class="social">
+											<li class="icon-fs-icon"><a href="#"></a></li>
+											<li class="icon-twitter-icon"><a href="#"></a></li>
+											<li class="icon-youtube-icon"><a href="#"></a></li>
+											<li class="icon-pinterest-icon"><a href="#"></a></li>
+											<li class="icon-linkedin"><a href="#"></a></li>
+										</ul>
+										<p>Newsletter Sign Up!</p>
+										<form action="#" method="post">
+											<div class="input-line ps-top-to-bottom ">									
+												<label for="e-mail" class=
+												"screen"></label>
+												<input type="email" name="name" required placeholder="E-mail Address" id="e-mail">
+												<button class="btn-send-email"><i class="fas fa-location-arrow"></i></button>			
+											</div>
+										</form>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div><!-- end footer-top -->
-			<div class="footer-bottom">
-				<p class="copy">	&#169; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</p>
+					<div class="footer-bottom">
+						<p class="copy">	&#169; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</p>
+					</div>
+				</footer>	
 			</div>
-		</footer>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-</html>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="js/all.js"></script>
+			<script src="js/common.js"></script>
+		</body>
+		</html>
