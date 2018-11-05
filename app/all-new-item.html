@@ -4,9 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>footer</title>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/libs/nouislider.min.css">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/assets/all-new-item.css">
@@ -30,7 +28,7 @@
 						</a>
 					</div>
 					<div class="icon d-flex">
-						<div class="bell y">
+						<div class="bell show-blok-login">
 							<div class="dropdown">
 								<a class="icon-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									<i class="far fa-bell"></i>
@@ -82,7 +80,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="envelope y">
+						<div class="envelope show-blok-login">
 							<div class="dropdown">
 								<a class="icon-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									<i class="far fa-envelope"></i>
@@ -131,7 +129,7 @@
 											</div>
 										</div>
 										<div class="bell-menu ml-auto">
-											<i class="fas fa-undo-alt"></i>
+											<i class="fas fa-reply"></i>
 										</div>
 									</a>
 								</div>
@@ -183,7 +181,7 @@
 						</div>
 					</div>
 					<div class="login">
-						<div class="dropdown y">
+						<div class="dropdown show-blok-login">
 							<a class="d-flex login-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<div class="img-login"></div>
 								<div class="text-login d-flex flex-column">									
@@ -202,16 +200,52 @@
 								<a class="dropdown-item dropdown-text" href="#"><i class="fas fa-angle-right dropdown-arrow-right"></i>Withdraws</a>
 							</div>
 						</div>
-						<button type="button" class="btn btn-success n button-login-green">Login</button>
+						<button type="button" class="btn btn-success show-blok-logout button-login-green" data-toggle="modal" data-target="#exampleModalCenter">Login</button>
 					</div>							
 					<div class="register">
-						<button type="button" class="btn btn-danger button-margin-register n">Register</button>
-						<button type="button" class="btn btn-danger button-margin-logout y">Logout</button>
+						<button type="button" class="btn btn-danger button-margin-register show-blok-logout">Register</button>
+						<button type="button" class="btn btn-danger button-margin-logout show-blok-login">Logout</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="header-boыуфксрttom">
+		<!-- .............................Modal................................. -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered my-width" role="document">
+				<div class="modal-content modal-my-style">
+					<div class="modal-header modal-my-style-header">					        
+						<button type="button" class="close close-color" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body modal-body-my">
+						<h2 class="modal-title modal-login mb-3" id="exampleModalLongTitle">login</h2>					      
+						<form class="form-style-my">
+							<div class="mb-2 position-relative">
+								<i class="fas fa-user modal-label"></i>
+								<input type="name" class="form-control input-my" placeholder="Name">							   
+							</div>
+							<div class="mb-3 position-relative">
+								<i class="fas fa-unlock modal-label"></i>
+								<input type="password" class="form-control input-my" placeholder="Password">
+							</div>
+							<div class="but-sub d-flex justify-content-between mb-3">
+								<div class="but-sub-width">
+									<button type="submit" class="submit-button">Submit</button>
+								</div>
+								<a href="#" class="register-link">
+									<i class="far fa-edit"></i>
+									<span>Create An Account?</span>
+								</a>								  		
+							</div>
+							<a class="lost-password" href="#">Lost Password?</a>							  		
+						</form>									
+					</div>					     
+				</div>
+			</div>
+		</div>
+		<!-- ............................nav...................................-->		
+		<div class="header-bottom">
 			<div class="header-bottom-center">
 				<div class="container">
 					<nav class="navbar navbar-expand-lg navbar-bottom navbar-light">
@@ -257,6 +291,7 @@
 			</div>
 		</div>
 	</header>
+	<!-- ............................search...................................-->
 	<div class="search">
 		<h1 class="search-titel">Welcome To Foxtar Market Place!</h1>
 		<h3 class="search-subtitel">Premium WordPress Themes, Web Templates and Many More...</h3>
@@ -307,8 +342,8 @@
 							</div>
 							<div class="price-range aside-custom">
 								<span class="aside-title">Price Range</span>
-								<div id="soft">
-									
+								<div class="range-wrap">
+									<input type="text" id="range" name="example_name" value="" />
 								</div>
 								<button type="button" aria-pressed="falce" class="btn btn-success btn-search-green"><i class="fas fa-search"></i>Search</button>
 							</div>
@@ -321,8 +356,8 @@
 										</div>										
 										<div class="card-body d-flex">
 											<div class="card-title-holder">
-												<span class="d-block new-card-title">WISTIA Corporate</span>
-												<span class="d-block card-subtitle">WordPress</span>
+												<span class="d-block new-card-title"><a href="#">WISTIA Corporate</a></span>
+												<span class="d-block card-subtitle"><a href="#">WordPress</a></span>
 											</div>
 											<div class="price">
 												<span class="d-block card-price">$59</span>
@@ -331,16 +366,25 @@
 										<div class="card-footer d-flex border-bottom">
 											<div class="author-holder d-flex">	
 												<div class="author-img">	</div>
-												<div class="author-name">PsdBosS</div>
+												<div class="author-name"><a href="#">PsdBosS</a></div>
 											</div>
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 50%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -350,8 +394,8 @@
 										</div>										
 										<div class="card-body d-flex">
 											<div class="card-title-holder">
-												<span class="d-block new-card-title">WISTIA Corporate</span>
-												<span class="d-block card-subtitle">WordPress</span>
+												<span class="d-block new-card-title"><a href="#">WISTIA Corporate</a></span>
+												<span class="d-block card-subtitle"><a href="#">WordPress</a></span>
 											</div>
 											<div class="price">
 												<span class="d-block card-price">$59</span>
@@ -360,16 +404,25 @@
 										<div class="card-footer d-flex border-bottom">
 											<div class="author-holder d-flex">	
 												<div class="author-img">	</div>
-												<div class="author-name">PsdBosS</div>
+												<div class="author-name"><a href="#">PsdBosS</a></div>
 											</div>
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 90%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -378,8 +431,8 @@
 											<img class="card-img-top" src="img/test.jpeg" alt="Card image cap">
 										</div>											<div class="card-body d-flex">
 											<div class="card-title-holder">
-												<span class="d-block new-card-title">WISTIA Corporate</span>
-												<span class="d-block card-subtitle">WordPress</span>
+												<span class="d-block new-card-title"><a href="#">WISTIA Corporate</a></span>
+												<span class="d-block card-subtitle"><a href="#">WordPress</a></span>
 											</div>
 											<div class="price">
 												<span class="d-block card-price">$59</span>
@@ -388,21 +441,30 @@
 										<div class="card-footer d-flex ">
 											<div class="author-holder d-flex">	
 												<div class="author-img">	</div>
-												<div class="author-name">PsdBosS</div>
+												<div class="author-name"><a href="#">PsdBosS</a></div>
 											</div>
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 35%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<button type="button" aria-pressed="falce" class="btn btn-success btn-search-green">View All</button>
+								<button type="button" aria-pressed="falce" class="btn btn-success btn-search-green btn-close">View All</button>
 							</div>
 						</div>
 					</div>
@@ -426,8 +488,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">WISTIA Corporate</span>
-											<span class="d-block card-subtitle">WordPress</span>
+											<span class="d-block new-card-title"><a href="#">WISTIA Corporate</a></span>
+											<span class="d-block card-subtitle"><a href="#">WordPress</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$59</span>
@@ -440,17 +502,26 @@
 									<div class="card-footer d-flex ">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">PsdBosS</div>
+											<div class="author-name"><a href="#">PsdBosS</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 50%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -472,8 +543,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">Cartoon Face</span>
-											<span class="d-block card-subtitle">Illsatration</span>
+											<span class="d-block new-card-title"><a href="#">Cartoon Face</a></span>
+											<span class="d-block card-subtitle"><a href="#">Illsatration</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$10</span>
@@ -486,17 +557,26 @@
 									<div class="card-footer d-flex">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">Mikestro</div>
+											<div class="author-name"><a href="#">Mikestro</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 40%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -518,8 +598,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">Food Menu</span>
-											<span class="d-block card-subtitle">Plugins</span>
+											<span class="d-block new-card-title"><a href="#">Food Menu</a></span>
+											<span class="d-block card-subtitle"><a href="#">Plugins</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$15</span>
@@ -532,17 +612,26 @@
 									<div class="card-footer d-flex">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">Gimsz</div>
+											<div class="author-name"><a href="#">Gimsz</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 80%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -566,8 +655,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">Grand Ballet - Dance</span>
-											<span class="d-block card-subtitle">PSD Template</span>
+											<span class="d-block new-card-title"><a href="#">Grand Ballet - Dance</a></span>
+											<span class="d-block card-subtitle"><a href="#">PSD Template</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$12</span>
@@ -580,17 +669,26 @@
 									<div class="card-footer d-flex">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">Greenta9</div>
+											<div class="author-name"><a href="#">Greenta9</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 80%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -612,8 +710,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">Mockup Desing</span>
-											<span class="d-block card-subtitle">PSD Template</span>
+											<span class="d-block new-card-title"><a href="#">Mockup Desing</a></span>
+											<span class="d-block card-subtitle"><a href="#">PSD Template</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$12</span>
@@ -626,17 +724,26 @@
 									<div class="card-footer d-flex">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">D9ten</div>
+											<div class="author-name"><a href="#">D9ten</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 80%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -658,8 +765,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">Responsive APP</span>
-											<span class="d-block card-subtitle">Site Template</span>
+											<span class="d-block new-card-title"><a href="#">Responsive APP</a></span>
+											<span class="d-block card-subtitle"><a href="#">Site Template</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$20</span>
@@ -672,17 +779,26 @@
 									<div class="card-footer d-flex">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">PsdBosS</div>
+											<div class="author-name"><a href="#">PsdBosS</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 80%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -706,8 +822,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">Business Template</span>
-											<span class="d-block card-subtitle">Joomla</span>
+											<span class="d-block new-card-title"><a href="#">Business Template</a></span>
+											<span class="d-block card-subtitle"><a href="#">Joomla</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$48</span>
@@ -720,17 +836,26 @@
 									<div class="card-footer d-flex">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">PsdBosS</div>
+											<div class="author-name"><a href="#">PsdBosS</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 80%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -752,8 +877,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">Flat Design</span>
-											<span class="d-block card-subtitle">PSD Template</span>
+											<span class="d-block new-card-title"><a href="#">Flat Design</a></span>
+											<span class="d-block card-subtitle"><a href="#">PSD Template</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$12</span>
@@ -766,17 +891,26 @@
 									<div class="card-footer d-flex">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">PsdBosS</div>
+											<div class="author-name"><a href="#">PsdBosS</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 80%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -798,8 +932,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">Gymedge</span>
-											<span class="d-block card-subtitle">WordPress</span>
+											<span class="d-block new-card-title"><a href="#">Gymedge</a></span>
+											<span class="d-block card-subtitle"><a href="#">WordPress</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$55</span>
@@ -812,17 +946,26 @@
 									<div class="card-footer d-flex">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">PsdBosS</div>
+											<div class="author-name"><a href="#">PsdBosS</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 80%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -846,8 +989,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">Grand Ballet - Dance</span>
-											<span class="d-block card-subtitle">PSD Template</span>
+											<span class="d-block new-card-title"><a href="#">Grand Ballet - Dance</a></span>
+											<span class="d-block card-subtitle"><a href="#">PSD Template</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$12</span>
@@ -860,17 +1003,26 @@
 									<div class="card-footer d-flex">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">PsdBosS</div>
+											<div class="author-name"><a href="#">PsdBosS</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 80%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -892,8 +1044,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">The Post Grid</span>
-											<span class="d-block card-subtitle">Component</span>
+											<span class="d-block new-card-title"><a href="#">The Post Grid</a></span>
+											<span class="d-block card-subtitle"><a href="#">Component</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$18</span>
@@ -906,17 +1058,26 @@
 									<div class="card-footer d-flex">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">PsdBosS</div>
+											<div class="author-name"><a href="#">PsdBosS</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 80%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -938,8 +1099,8 @@
 								<div class="card-body-wrapp">
 									<div class="card-body d-flex">
 										<div class="card-title-holder">
-											<span class="d-block new-card-title">Grand Ballet - Dance</span>
-											<span class="d-block card-subtitle">PSD Template</span>
+											<span class="d-block new-card-title"><a href="#">Grand Ballet - Dance</a></span>
+											<span class="d-block card-subtitle"><a href="#">PSD Template</a></span>
 										</div>
 										<div class="price">
 											<span class="d-block card-price">$18</span>
@@ -952,17 +1113,26 @@
 									<div class="card-footer d-flex">
 										<div class="author-holder d-flex">	
 											<div class="author-img">	</div>
-											<div class="author-name">PsdBosS</div>
+											<div class="author-name"><a href="#">PsdBosS</a></div>
 										</div>
 										<div class="demand d-flex">
 											<div class="rank d-flex">	
-												<ul class="rank-stars">
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-													<li class="d-inline"><i class="star fas fa-star"></i></li>
-												</ul>
+												<div class="wrapp-stars">
+													<ul style="width: 80%" class="rank-stars rank-stars-acive">
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+														<li class="d-inline"><i class="star fas fa-star"></i></li>
+													</ul>
+													<ul class="rank-stars rank-stars-empty">
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+														<li class="d-inline"><i class="star far fa-star"></i></li>
+													</ul>
+												</div>
 												<span class="d-block average">(05)</span>
 											</div>
 											<div class="comment text-delimiter">
@@ -1066,7 +1236,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="js/libs/nouislider.min.js"></script>
+	<script src="js/libs/ion.rangeSlider.js"></script>
 	<script src="js/all.js"></script>
 	<script src="js/common.js"></script>
 </body>

@@ -1,0 +1,44 @@
+/*range*/
+.range-wrap {
+	padding: 15px 0 20px 0;
+}
+
+.range-wrap .irs-bar {
+	background: green;
+	height: 5px;
+}
+
+.range-wrap .irs-line {
+	background: grey;
+	border-radius: 20px;
+	height: 5px;
+}
+
+.range-wrap .irs-slider {
+	border: 3px solid green;
+	border-radius: 50%;
+	background: #fff;
+	width: 16px;
+	height: 16px;
+	top: 20px;
+}
+
+.range-wrap .irs-from,
+.range-wrap .irs-to {
+	background: #fff;
+	color: grey;
+	font-size: 15px;
+	top: 100%;
+}
+
+.range-wrap .irs-from:after,
+.range-wrap .irs-to:after,
+.range-wrap .irs-single:after {
+	display: none;
+}
+
+.range-wrap .irs-single {
+	background: #fff;
+	color: grey;
+	font-size: 10px;
+}

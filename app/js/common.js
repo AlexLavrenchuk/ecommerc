@@ -1,13 +1,13 @@
 $(document).ready(function(){
   
-	$('.slider').slick({
-		slidesToShow: 4,
-		slidesToScroll: 2,
+  $('.slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 2,
     arrows: false,
-		dots: true,
-	  	dotsClass: "my-dots",
+    dots: true,
+    dotsClass: "my-dots",
 
-	  	 responsive: [
+    responsive: [
     {
       breakpoint: 993,
       settings: {
@@ -35,23 +35,19 @@ $(document).ready(function(){
         dots: true,
       }
     }
-  ]
-	});
+    ]
+  });
+  $('.submit-button').click(function(){
+    $('.show-blok-login').show();
+    $('.show-blok-logout').hide();
+    $(".shopping-cart-notification").css("background", "#95c85a");
+  });
+  $('.button-margin-logout').click(function(){
+    $('.show-blok-logout').show();
+    $('.show-blok-login').hide();
+    $(".shopping-cart-notification").css("background", "#e74c3c");
+  });
 });
-
-/////////////login////////////
-$('.submit-button').click(function(){
-  $('.show-blok-login').show();
-  $('.show-blok-logout').hide();
-  $(".shopping-cart-notification").css("background", "#95c85a");
-});
-$('.button-margin-logout').click(function(){
-  $('.show-blok-logout').show();
-  $('.show-blok-login').hide();
-  $(".shopping-cart-notification").css("background", "#e74c3c");
-});
-
-
 
 /////////////////// 
 $('.view-selection .fa-th-list').click(function(){
@@ -67,22 +63,39 @@ $('.view-selection .fa-th-large').click(function(){
 });
 
 $('.top-10 .btn-search-green').click(function(){
-  $('.top-10 .card').addClass('visible-tablet');
+  $('.top-10 .card').toggleClass('visible-tablet');
 });
+
+//////toggleText//////// 
+jQuery.fn.extend({
+  toggleText: function (a, b){
+    var isClicked = false;
+    var that = this;
+    this.click(function (){
+      if (isClicked) { that.text(a); isClicked = false; }
+      else { that.text(b); isClicked = true; }
+    });
+    return this;
+  }
+});
+
+$('.btn-close').toggleText("View All", "Close");
 
 ////////range////////// 
-var softSlider = document.getElementById('soft');
 
-noUiSlider.create(softSlider, {
-    start: 50,
-    range: {
-        min: 0,
-        max: 100
-    },
-    pips: {
-        mode: 'values',
-        values: [20, 80],
-        density: 4
-    }
+
+$("#range").ionRangeSlider({
+  hide_min_max: true,
+  keyboard: true,
+  min: 0,
+  max: 1200,
+  from: 0,
+  to: 600,
+  type: 'double',
+  step: 1,
+  prefix: "$",
 });
+
+
+
 
