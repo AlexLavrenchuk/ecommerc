@@ -5,18 +5,41 @@
 
 
 
+.gtbuilder {
+	display: block;
+	font-size: 17px;
+	margin-top: 40px;
+	margin-bottom: 35px;
+}
 
+.productdescription {
+font-size: 12px;
+}
 
 .live_preview {
-
+ background-color: red;
+ height: 50px;
+ width: 140px; 
+ float: left;
+ margin-right: 18px;
 }
 
 .screenshots {
-
+ display: inline;
+ background-color: rgb(65 84 94);
+ height: 50px;
+ width: 140px; 
+ float: left;
+ margin-right: 18px;
 }
 
 .documentation {
-
+ display: inline;
+ background-color: rgb(139 195 74);
+ height: 50px;
+ width: 140px; 
+ float: left;
+ margin-right: 18px;
 }
 
 .square {
