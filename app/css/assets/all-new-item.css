@@ -13,6 +13,10 @@
 	padding: 50px 15px 80px 15px;
 }
 
+.all-new-item a {
+	color: inherit;
+}
+
 ul,
 ol,
 li {
@@ -66,7 +70,7 @@ li {
 }
 
 .active-card:hover {
-box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
+	box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 }
 
 .author-img {
@@ -95,7 +99,7 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 	position: absolute;
 	top: 34%;
 	left: 0px;
-	}
+}
 
 .text-delimiter .far {
 	padding: 0 15px 0 0 ;
@@ -123,7 +127,7 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 .viwe-for-list .sales {
 	font-size: 13px;
 	color: #dfe1e4;
-	}
+}
 
 .total-like,
 .total-comment {
@@ -157,10 +161,25 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 	color: gold;
 } 
 
+.wrapp-stars {
+	width: 57.25px;
+	position: relative;
+}
+
+.rank-stars-acive {
+	position: absolute;
+	overflow: hidden;
+}
+
 .average {
 	font-weight: normal;
 	font-size: 12px;
 	margin-left: 10px;
+}
+
+.card-title-holder a:hover {
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .new-card-title {
@@ -187,9 +206,7 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 }
 
 
-/*////////////////// 
-			aside
-//////////////////*/
+/*////////////////// aside//////////////////*/
 
 .aside-custom {
 	background: #ffffff;
@@ -219,10 +236,10 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 }
 
 .categories a:hover {
- 	color: #8bc34a;
- 	text-decoration: none;
- 	cursor: pointer;
-  }
+	color: #8bc34a;
+	text-decoration: none;
+	cursor: pointer;
+}
 
 .categories li {
 	position: relative;
@@ -231,9 +248,9 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 
 .categories .fas {
 	position: absolute;
- 	top: 5px;
- 	left: 0;
- 	color: #8bc34a;
+	top: 5px;
+	left: 0;
+	color: #8bc34a;
 }
 
 .quantity {
@@ -252,7 +269,7 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 .price-range .fa-search {
 	position: absolute;
 	top: 20px;
-  left: 50px;
+	left: 50px;
 }
 
 .top-10 .card {
@@ -265,11 +282,11 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 
 .top-10 .card-img-top {
 	margin-top: 30px;
-	}
+}
 
 .top-10 .card-body {
 	padding: 20px 0;
- 	}
+}
 
 .top-10 .card-footer  {
 	border-top: 0;
@@ -281,7 +298,7 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 }
 
 .top-10 .card-footer:last-child {
-    border-radius: 0;
+	border-radius: 0;
 }
 
 .top-10 .btn-success {
@@ -315,9 +332,7 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 	border: none;
 }
 
-/*....................
-			Card list
-......................*/
+/*....................Card list......................*/
 .card-deck-list {
 	flex-direction: column;
 	margin-bottom: 0;
@@ -362,7 +377,7 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 }
 
 .card-deck-list .new-card-title {
-    padding: 0 0 10px 0;
+	padding: 0 0 10px 0;
 }
 
 .card-deck-list .card-price {
@@ -400,6 +415,14 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+	.categories a  {
+		flex-direction: row;
+	}
+
+	.view-selection {
+		display: none!important;
+	}
+
 	.top-10 .card {
 		display: none;
 	}
@@ -463,6 +486,10 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
+	.view-selection {
+		display: none;
+	}
+
 	.top-10 .card {
 		display: none;
 	}
@@ -539,6 +566,10 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 }
 
 @media (max-width: 479px) {
+	.view-selection {
+		display: none!important;
+	}
+
 	.top-10 .card {
 		display: none;
 	}
@@ -547,7 +578,7 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 		display: block!important;
 	}
 
-.row-for-tablet {
+	.row-for-tablet {
 		display: flex;
 		flex-direction: column;
 	}
@@ -575,7 +606,7 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 	.author-holder {
 		justify-content: center;
 	}
-	
+
 	.card-deck-list .card {
 		flex-direction: column;
 	}
@@ -584,8 +615,6 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 	.card-deck-list .card-img-wrapp {
 		width: 100%;
 	}
-
-
 }
 
 @media (max-width: 321px) {
@@ -599,7 +628,8 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 
 	.row-for-tablet {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: nowrap;
 	}
 
 	.btn-search-green {
@@ -614,10 +644,6 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 		margin: 10px;
 	}
 
-	.demand {
-		flex-direction: column;
-	}
-
 	.comment, .like {
 		padding: 0;
 		margin: 0;
@@ -628,5 +654,3 @@ box-shadow: 0px 15px 15px rgba(0,0,0,0.1)
 	}
 
 }
-
-

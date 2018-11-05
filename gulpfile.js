@@ -25,8 +25,8 @@ gulp.task('scripts', function() {
         'app/js/libs/jquery-3.3.1.min.js',
         'app/js/libs/bootstrap.min.js',
         'app/js/libs/slick.min.js',
-        'app/js/libs/nouislider.min.js'
-    ])
+        'app/js/libs/ion.rangeSlider.js'
+        ])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('app/js/'));
 });
