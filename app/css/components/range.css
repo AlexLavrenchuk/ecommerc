@@ -21,6 +21,7 @@
 	width: 16px;
 	height: 16px;
 	top: 20px;
+	cursor: pointer;
 }
 
 .range-wrap .irs-from,
